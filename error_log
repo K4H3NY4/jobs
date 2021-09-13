@@ -1,0 +1,9 @@
+[28-Jan-2021 00:33:16 Africa/Nairobi] PHP Notice:  Undefined index: bgphoto in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/profile.php on line 45
+[28-Jan-2021 00:33:16 Africa/Nairobi] PHP Notice:  Undefined index: about in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/profile.php on line 150
+[28-Jan-2021 00:33:16 Africa/Nairobi] PHP Notice:  Undefined index: services in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/profile.php on line 155
+[28-Jan-2021 00:33:16 Africa/Nairobi] PHP Notice:  Undefined index: areas in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/profile.php on line 159
+[28-Jan-2021 00:33:17 Africa/Nairobi] PHP Notice:  Undefined index: bgphoto in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/profile.php on line 45
+[28-Jan-2021 00:33:17 Africa/Nairobi] PHP Notice:  Undefined index: about in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/profile.php on line 150
+[28-Jan-2021 00:33:17 Africa/Nairobi] PHP Notice:  Undefined index: services in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/profile.php on line 155
+[28-Jan-2021 00:33:17 Africa/Nairobi] PHP Notice:  Undefined index: areas in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/profile.php on line 159
+[29-Jan-2021 23:32:39 UTC] PHP Notice:  Undefined variable: occupation in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/upload.php on line 66

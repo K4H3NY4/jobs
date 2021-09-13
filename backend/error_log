@@ -1,0 +1,132 @@
+[17-Jan-2021 19:34:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[17-Jan-2021 19:42:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[17-Jan-2021 20:12:14 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[17-Jan-2021 21:15:31 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[18-Jan-2021 06:45:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[18-Jan-2021 13:00:21 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[18-Jan-2021 16:07:14 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[19-Jan-2021 20:01:39 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[27-Jan-2021 21:54:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[28-Jan-2021 00:06:07 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[29-Jan-2021 21:18:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[29-Jan-2021 21:19:20 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[29-Jan-2021 21:20:24 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Undefined index: id in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 6
+[29-Jan-2021 22:13:19 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 9
+[29-Jan-2021 22:13:19 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 11
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 13
+[29-Jan-2021 22:13:19 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 15
+[29-Jan-2021 22:13:19 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 16
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 19
+[29-Jan-2021 22:13:19 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 21
+[29-Jan-2021 22:13:19 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 22
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 34
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 118
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 122
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 126
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 131
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 135
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 140
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 145
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 168
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 178
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 184
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 188
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 195
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 202
+[29-Jan-2021 22:13:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 263
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Undefined index: id in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 6
+[29-Jan-2021 22:13:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 9
+[29-Jan-2021 22:13:58 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 11
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 13
+[29-Jan-2021 22:13:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 15
+[29-Jan-2021 22:13:58 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 16
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 19
+[29-Jan-2021 22:13:58 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 21
+[29-Jan-2021 22:13:58 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 22
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 34
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 118
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 122
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 126
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 131
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 135
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 140
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 145
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 168
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 178
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 184
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 188
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 195
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 202
+[29-Jan-2021 22:13:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 263
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Undefined index: id in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 6
+[29-Jan-2021 22:17:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 9
+[29-Jan-2021 22:17:59 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 11
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 13
+[29-Jan-2021 22:17:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 15
+[29-Jan-2021 22:17:59 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 16
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 19
+[29-Jan-2021 22:17:59 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 21
+[29-Jan-2021 22:17:59 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 22
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 118
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 122
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 126
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 131
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 135
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 140
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 145
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 168
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 178
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 184
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 188
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 195
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 202
+[29-Jan-2021 22:17:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 263
+[29-Jan-2021 22:26:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 9
+[29-Jan-2021 22:26:05 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 11
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 13
+[29-Jan-2021 22:26:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 15
+[29-Jan-2021 22:26:05 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 16
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 19
+[29-Jan-2021 22:26:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 21
+[29-Jan-2021 22:26:05 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 22
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 121
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 125
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 129
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 134
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 138
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 143
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 148
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 171
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 181
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 187
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 191
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 198
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 205
+[29-Jan-2021 22:26:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 266
+[29-Jan-2021 22:27:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 9
+[29-Jan-2021 22:27:20 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 11
+[29-Jan-2021 22:27:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 13
+[29-Jan-2021 22:27:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 15
+[29-Jan-2021 22:27:20 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 16
+[29-Jan-2021 22:27:20 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 19
+[29-Jan-2021 22:27:20 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 21
+[29-Jan-2021 22:27:20 UTC] PHP Warning:  mysqli_free_result() expects parameter 1 to be mysqli_result, bool given in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 22
+[29-Jan-2021 22:27:31 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 78
+[29-Jan-2021 22:29:12 UTC] PHP Parse error:  syntax error, unexpected 'main' (T_STRING), expecting ')' in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 89
+[29-Jan-2021 22:29:16 UTC] PHP Parse error:  syntax error, unexpected 'main' (T_STRING), expecting ')' in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 89
+[29-Jan-2021 22:29:17 UTC] PHP Parse error:  syntax error, unexpected 'main' (T_STRING), expecting ')' in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 89
+[29-Jan-2021 22:29:18 UTC] PHP Parse error:  syntax error, unexpected 'main' (T_STRING), expecting ')' in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 89
+[29-Jan-2021 22:29:19 UTC] PHP Parse error:  syntax error, unexpected 'main' (T_STRING), expecting ')' in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 89
+[29-Jan-2021 22:29:19 UTC] PHP Parse error:  syntax error, unexpected 'main' (T_STRING), expecting ')' in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 89
+[29-Jan-2021 22:29:19 UTC] PHP Parse error:  syntax error, unexpected 'main' (T_STRING), expecting ')' in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 89
+[29-Jan-2021 22:29:20 UTC] PHP Parse error:  syntax error, unexpected 'main' (T_STRING), expecting ')' in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 89
+[29-Jan-2021 22:29:22 UTC] PHP Parse error:  syntax error, unexpected 'main' (T_STRING), expecting ')' in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/request-details.php on line 89
+[30-Jan-2021 00:03:01 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 108
+[30-Jan-2021 07:24:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 108
+[05-Feb-2021 04:56:56 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 108
+[05-Feb-2021 07:27:42 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 108
+[05-Feb-2021 09:54:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 108
+[05-Feb-2021 10:36:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 108
+[10-Feb-2021 07:59:23 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 108
+[21-Feb-2021 22:52:13 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/pacisvor/housing.pacisvorgel.co.ke/housing-jobs/backend/login.php on line 108
