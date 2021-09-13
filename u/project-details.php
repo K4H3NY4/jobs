@@ -22,11 +22,16 @@ $query = 'SELECT * FROM tasks  WHERE  id = '.base64_decode($id);
 $result = mysqli_query($db,$query);
 $project = mysqli_fetch_assoc($result);
 mysqli_free_result($result);
+<<<<<<< HEAD
 $taskid = base64_decode($id);
 
 
 $_SESSION['taskid'] = $taskid;
 
+=======
+
+$taskid = base64_decode($id);
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 $profquery = 'SELECT * FROM prof WHERE  id = '.$project['prof-id'];
 $profresult = mysqli_query($db,$profquery);
@@ -34,10 +39,13 @@ $profDetails = mysqli_fetch_assoc($profresult);
 mysqli_free_result($profresult);
 
 
+<<<<<<< HEAD
 $queryBids = "SELECT * FROM `bids` WHERE  `task-id`='$taskid' AND `status`='1' ORDER by `id` DESC";
 $resultBids = mysqli_query($db,$queryBids);
 $bids =  mysqli_fetch_all($resultBids, MYSQLI_ASSOC);
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 /**
  * 
@@ -72,6 +80,7 @@ if(isset($_POST['release'])){
     if($db->error){
         echo $db->error;
     }else{
+<<<<<<< HEAD
         /**
          * 
          * send email to prof funds released
@@ -93,6 +102,8 @@ if(isset($_POST['release'])){
         
         
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
         header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
     }
 }
@@ -106,6 +117,7 @@ if(isset($_POST['cancel'])){
     if($db->error){
         echo $db->error;
     }else{
+<<<<<<< HEAD
         /**
          * send email to professional if job cancel
          * 
@@ -126,6 +138,8 @@ if(isset($_POST['cancel'])){
         
 
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
         header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
     }
 }
@@ -165,12 +179,18 @@ if(isset($_POST['commentAdd']) && $_POST['comment'] != NULL) {
     if($db->error){
     echo $db->error;
     }else{
+<<<<<<< HEAD
     
         header("Location: project-details.php?id=$id");
+=======
+    ($sql);
+        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     
     }
     
     
+<<<<<<< HEAD
     }else if(isset($_POST['commentDelete'])){
 
 
@@ -192,6 +212,9 @@ if(isset($_POST['commentAdd']) && $_POST['comment'] != NULL) {
 }
     
 
+=======
+    }
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
     /****
      * 
@@ -233,6 +256,10 @@ include('sidebar.php');
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="media">
+<<<<<<< HEAD
+=======
+                                            <img src="assets/images/companies/img-1.png" alt="" class="avatar-sm mr-4">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
                                             <div class="media-body overflow-hidden">
                                                 <h5 class="text-truncate font-size-15 text-capitalize"><?php  echo $project['title']; ?></h5>
@@ -240,14 +267,33 @@ include('sidebar.php');
                                             </div>
                                         </div>
 
+<<<<<<< HEAD
                                         <div class="row task-dates">
                                             <div class="col-sm-3 col-6">
                                                 <div class="mt-4">
                                                     <h5 class="font-size-14"><i class="bx bx-calendar mr-1 text-success"></i>Date Posted</h5>
+=======
+                                        <h5 class="font-size-15 mt-4">Description :</h5>
+
+                                        <?php 
+
+?>
+
+
+                                        <p class="text-muted"><?php echo $project['description'];  ?></p>
+
+                                       
+                                        
+                                        <div class="row task-dates">
+                                            <div class="col-sm-3 col-6">
+                                                <div class="mt-4">
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar mr-1 text-primary"></i> Start Posted</h5>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p class="text-muted mb-0"><?php  echo $project['time-created'] ?></p>
                                                 </div>
                                             </div>
     
+<<<<<<< HEAD
                                             <div class="col-sm-2 col-6">
                                                 <div class="mt-4">
                                                     <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-success"></i> Period</h5>
@@ -258,13 +304,24 @@ include('sidebar.php');
                                             <div class="col-sm-2 col-6">
                                                 <div class="mt-4">
                                                     <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-success"></i> Budget</h5>
+=======
+                                            <div class="col-sm-3 col-6">
+                                                <div class="mt-4">
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-primary"></i> Budget</h5>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p class="text-muted mb-0"><?php echo $project['price']; ?></p>
                                                 </div>
                                             </div>
 
+<<<<<<< HEAD
                                             <div class="col-sm-2 col-6">
                                                 <div class="mt-4">
                                                     <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-success"></i>Status</h5>
+=======
+                                            <div class="col-sm-3 col-6">
+                                                <div class="mt-4">
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-primary"></i>Status</h5>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p class="text-muted mb-0"><?php echo $project['cstatus']; ?></p>
                                                 </div>
                                             </div>
@@ -278,7 +335,11 @@ include('sidebar.php');
                                                  if ($project['customer-id'] == $customerId  ){
                                                 
                                                 echo ('
+<<<<<<< HEAD
                                                     <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-success"></i>Funds Status</h5> ');
+=======
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-primary"></i>Funds Status</h5> ');
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                  }else{}
 
 
@@ -288,7 +349,11 @@ include('sidebar.php');
                                                  
 
                                                     if ($project['cstatus'] == 'Taken' && $project['customer-id'] == $customerId && $project['price'] < $available_balance){
+<<<<<<< HEAD
                                                     echo('<button class="btn btn-sm btn-success" name="release">Release Funds</button>  ');
+=======
+                                                    echo('<button class="btn btn-sm btn-primary" name="release">Release Funds</button>  ');
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     echo('<button class="btn btn-sm btn-danger" name="cancel">Cancel Job</button>  ');
                                                       }  else if ($project['cstatus'] == 'Closed' && $project['customer-id'] == $customerId){
                                                           echo('<button class="btn btn-sm btn-success disabled">Paid</button>  ');
@@ -310,6 +375,7 @@ include('sidebar.php');
                                         </div>
                                         ');?>
 
+<<<<<<< HEAD
                                         <h5 class="font-size-15 mt-4">Description :</h5>
 
                                         <?php 
@@ -323,6 +389,8 @@ include('sidebar.php');
                                         
                                      
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         <div class="text-muted mt-4" >
                                             <img src="../<?php echo $project['photo'];  ?>" alt="" width="100%" height="100%">
                                         </div>
@@ -347,7 +415,11 @@ include('sidebar.php');
                               echo('
                                 <div class="card">
                                     <div class="card-body">
+<<<<<<< HEAD
                                         <h4 class="card-title mb-4">Professional Assigned Job</h4>
+=======
+                                        <h4 class="card-title mb-4">Prof Details</h4>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
                                         <div class="media mb-4">
                                             <div class="col-4">
@@ -385,6 +457,7 @@ include('sidebar.php');
                             }else { };
                                 ?>
 
+<<<<<<< HEAD
 
                                 <!--- Bids --->
 
@@ -458,6 +531,69 @@ include('sidebar.php');
 
                                                                     
                                 </div>
+=======
+<div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-4">Comments</h4>
+
+                                        <form action="" method="post" class="row mb-3">
+                                        <input type="text" placeholder="Add Comment" name="comment" class="form-control w-75 ml-3"> 
+                                        <button class="btn btn-sm btn-primary ml-3" type="submit" name="commentAdd">Comment</button>
+                                        </form>
+
+                                        <?php foreach ( $comments as $comment) :?>
+                                       
+                                        <?php
+                                               
+                                               $queryCommentCustomer = 'SELECT * FROM customer WHERE `id` = '.$comment['customer-id']; 
+                                               $resultCommentCustomer = mysqli_query($db,$queryCommentCustomer);
+                                               $commentsCustomer = mysqli_fetch_assoc($resultCommentCustomer);
+                                               mysqli_free_result($resultCommentCustomer);
+
+                                               $queryCommentProf = 'SELECT * FROM prof WHERE `id` ='.$comment['prof-id']; 
+                                               $resultCommentProf = mysqli_query($db,$queryCommentProf);
+                                               $commentsProf= mysqli_fetch_assoc($resultCommentProf);
+                                               mysqli_free_result($resultCommentProf);
+                                                                           
+                                
+                                                ?>
+
+
+                                             <div class="media mb-4">
+                                            <div class="mr-3">
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="font-size-13 mb-1 text-capitalize">
+                                                <?php
+                                                if ($comment['customer-id'] > 0  && $comment['prof-id'] == 0 ){
+                                                    echo $commentsCustomer["first-name"] ;
+                                                    echo(' ');
+                                                    echo $commentsCustomer["last-name"] ; 
+
+                                                }else if ($comment['prof-id'] > 0  && $comment['customer-id'] == 0 ){
+                                                    echo $commentsProf["first-name"] ;
+                                                    echo(' ');
+                                                    echo $commentsProf["last-name"] ; 
+
+                                                }else{}                                          
+
+                                                ?>
+                                                </h5>
+                                                <p class="text-muted mb-1">
+                                                    <?php echo $comment["comment"] ; ?>
+                                                </p>
+                                            </div>
+                                            <div class="ml-3">
+                                                <span class="text-primary small">   <?php echo $comment["date-created"] ; ?></span>
+                                            </div>
+                                        </div>
+
+                                            
+                                      <?php endforeach ?>
+
+                                                                
+                                
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                 
                                 </div>
                             </div>
@@ -557,6 +693,7 @@ mysqli_close($db);
 
         <script src="../assets/js/app.js"></script>
 
+<<<<<<< HEAD
         <script>
    $(document).ready(function(){
 
@@ -584,6 +721,8 @@ function sendRequest(){
         </script>
 
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
     </body>
 </html>

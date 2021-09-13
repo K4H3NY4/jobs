@@ -1,7 +1,10 @@
 <?php
 
 require('../config/db.php');
+<<<<<<< HEAD
 error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 session_start();
 
@@ -22,6 +25,7 @@ $project = mysqli_fetch_assoc($result);
 $taskid = base64_decode($id);
 mysqli_free_result($result);
 
+<<<<<<< HEAD
 
 $_SESSION['taskid'] = $taskid;
 
@@ -35,6 +39,13 @@ $queryBids = "SELECT * FROM `bids` WHERE  `task-id`='$taskid' AND `prof-id`='$pr
 $resultBids = mysqli_query($db,$queryBids);
 $bids = mysqli_fetch_assoc($resultBids);
 mysqli_free_result($resultBids);
+=======
+$profquery = 'SELECT * FROM customer WHERE  id = '.$project['customer-id'];
+$profresult = mysqli_query($db,$profquery);
+$profDetails = mysqli_fetch_assoc($profresult);
+mysqli_free_result($profresult);
+
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 /**
  * 
  * If there is no project with that id redirect to 404 page
@@ -42,7 +53,11 @@ mysqli_free_result($resultBids);
  * 
  *  */
 
+<<<<<<< HEAD
 if( $project['id'] == NULL  ){   
+=======
+if( $project['id'] == NULL || $project['prof-id'] != 0 ){   
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 header("Location: ../404.php");
 }else {};
 
@@ -61,6 +76,7 @@ if(isset($_POST['take-job'])){
     if($db->error){
         echo $db->error;
     }else{
+<<<<<<< HEAD
 
         /***
          * 
@@ -86,6 +102,9 @@ mail($to,$subject,$message,$headers);
 
 
         header("Location: https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+=======
+        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     }
 }
 
@@ -107,6 +126,7 @@ if(isset($_POST['cancel-job'])){
     if($db->error){
         echo $db->error;
     }else{
+<<<<<<< HEAD
         /***
          * 
          * send email to user task canceled 
@@ -208,6 +228,12 @@ if(isset($_POST['cancel-bid'])){
         header("Location: https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
  }
 }
+=======
+        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+    }
+}
+
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 
 
@@ -235,6 +261,7 @@ if(isset($_POST['commentAdd']) && $_POST['comment'] != NULL) {
     if($db->error){
     echo $db->error;
     }else{
+<<<<<<< HEAD
     
         header("Location: https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
     
@@ -263,6 +290,15 @@ if(isset($_POST['commentAdd']) && $_POST['comment'] != NULL) {
         
     }
         
+=======
+    ($sql);
+        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+    
+    }
+    
+    
+    }
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 
 
@@ -304,6 +340,10 @@ include('sidebar.php');
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="media">
+<<<<<<< HEAD
+=======
+                                            <img src="assets/images/companies/img-1.png" alt="" class="avatar-sm mr-4">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
                                             <div class="media-body overflow-hidden">
                                                 <h5 class="text-truncate font-size-15 text-capitalize"><?php  echo $project['title']; ?></h5>
@@ -312,6 +352,7 @@ include('sidebar.php');
                                             </div>
                                         </div>
 
+<<<<<<< HEAD
                                         <div class="row task-dates">
                                             <div class="col-sm-3 col-6">
                                                 <div class="mt-4">
@@ -330,20 +371,49 @@ include('sidebar.php');
                                             <div class="col-sm-2 col-6">
                                                 <div class="mt-4">
                                                     <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-success"></i> Budget</h5>
+=======
+                                        <h5 class="font-size-15 mt-4">Description :</h5>
+
+                                        <p class="text-muted"><?php echo $project['description'];  ?></p>
+
+                                       
+                                        
+                                        <div class="row task-dates">
+                                            <div class="col-sm-3 col-6">
+                                                <div class="mt-4">
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar mr-1 text-primary"></i> Start Posted</h5>
+                                                    <p class="text-muted mb-0"><?php  echo $project['time-created'] ?></p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-sm-3 col-6">
+                                                <div class="mt-4">
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-primary"></i> Budget</h5>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p class="text-muted mb-0"><?php echo $project['price']; ?></p>
                                                 </div>
                                             </div>
 
+<<<<<<< HEAD
                                             <div class="col-sm-2 col-6">
                                                 <div class="mt-4">
                                                     <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-success"></i> Status</h5>
+=======
+                                            <div class="col-sm-3 col-6">
+                                                <div class="mt-4">
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-primary"></i> Status</h5>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p class="text-muted mb-0"><?php echo $project['cstatus']; ?></p>
                                                 </div>
                                             </div>
 
                                             <div class="col-sm-3 col-6">
                                                 <div class="mt-4">
+<<<<<<< HEAD
                                                     <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-success"></i> Action</h5>
+=======
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-primary"></i> Action</h5>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p class="text-muted mb-0">
                                                     <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>"  >
 
@@ -355,12 +425,17 @@ include('sidebar.php');
 
                                                          *******/
 
+<<<<<<< HEAD
                                                         if(!isset($_SESSION["profid"])  ){
+=======
+                                                        if(!isset($_SESSION["profid"])){
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                             echo(' <button class="btn btn-sm btn-info disabled">Accesible to Professionals only</button> ');
                                                             }
                                                         else if(isset($_SESSION["profid"])){
 
                                                             if ($project['cstatus'] == 'Open' ){
+<<<<<<< HEAD
                                                            
                                                                 echo ('<button class="btn btn-sm btn-outline-success" name="take-job">Take Job</button>');
                                                                     if($bids['status']==0){
@@ -377,6 +452,16 @@ include('sidebar.php');
 
                                                             }else if( $project['prof-id']  != $_SESSION['profid']  && $project['cstatus'] == 'Taken'  ){
                                                                 echo(' <button class="btn btn-sm btn-dark" >Job Taken</button> ');}
+=======
+                                                                echo ('<button class="btn btn-sm btn-outline-primary" name="take-job">Take Job</button>');
+                                                            }else if( $project['cstatus'] == 'Closed'  ){
+
+                                                             echo(' <button class="btn btn-sm btn-outline-warning disabled" >Job Closed </button> ');
+
+                                                            }else if($project['cstatus'] == 'Canceled' ){
+                                                                echo(' <button class="btn btn-sm btn-warning disabled" >Job Canceled</button> ');
+                                                            }
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                             
                                                             else{
                                                                 echo(' <button class="btn btn-sm btn-outline-danger" name="cancel-job">Cancel Job</button> ');
@@ -394,6 +479,7 @@ include('sidebar.php');
 
                                         </div>
 
+<<<<<<< HEAD
                                         <h5 class="font-size-15 mt-4">Description :</h5>
 
                                         <p class="text-muted"><?php echo $project['description'];  ?></p>
@@ -402,6 +488,8 @@ include('sidebar.php');
                                         
                                        
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         <div class="text-muted mt-4" >
                                             <img src="../<?php echo $project['photo'];  ?>" alt="" width="100%" height="100%">
                                         </div>
@@ -431,31 +519,51 @@ include('sidebar.php');
 
                                                     <div class="media mb-4">
                                                         <div class="col-4">
+<<<<<<< HEAD
                                                             <img class="media-object rounded-circle avatar-xs" alt="" src="../'); echo($customerDetails["picture"]);
+=======
+                                                            <img class="media-object rounded-circle avatar-xs" alt="" src="../'); echo($profDetails["picture"]);
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                             echo('"> 
                                                         </div>
                                                         <div class="media-body">
                                                             <h5 class="font-size-13 mb-1 text-capitalize"> ');
                                                             
+<<<<<<< HEAD
                                                 echo($customerDetails["first-name"]);
 
                                                 echo(' ');
                                                         
                                                         echo( $customerDetails["last-name"]);
+=======
+                                                echo($profDetails["first-name"]);
+
+                                                echo(' ');
+                                                        
+                                                        echo( $profDetails["last-name"]);
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
                                                         echo('
                                                             
                                                     </h5>
                                                             <p class="text-muted mb-1 text-dark"> Tel : ');
 
+<<<<<<< HEAD
                                                             echo($customerDetails["phone"]);
+=======
+                                                            echo($profDetails["phone"]);
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
                                                             echo('   
                                                             </p>
 
                                                             <p class="text-muted mb-1 text-dark"> E-mail : ');
 
+<<<<<<< HEAD
                                                         echo( $customerDetails["email"] );
+=======
+                                                        echo( $profDetails["email"] );
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
                                                         echo(' 
                                                             </p>
@@ -468,6 +576,7 @@ include('sidebar.php');
 
 <div class="card">
                                     <div class="card-body">
+<<<<<<< HEAD
                                         <h4 class="card-title mb-4">Chat</h4>
 
                                         <form action="" method="post" class="row mb-3">
@@ -477,6 +586,63 @@ include('sidebar.php');
                                         </form>
 
                                         <div id="div_refresh"></div>
+=======
+                                        <h4 class="card-title mb-4">Comments</h4>
+
+                                        <form action="" method="post" class="row mb-3">
+                                        <input type="text" placeholder="Add Comment" name="comment" class="form-control w-75 ml-3"> 
+                                        <button class="btn btn-sm btn-primary ml-3" type="submit" name="commentAdd">Comment</button>
+                                        </form>
+
+                                        <?php foreach ( $comments as $comment) :?>
+                                       
+                                        <?php
+                                               
+                                               $queryCommentCustomer = 'SELECT * FROM customer WHERE `id` = '.$comment['customer-id']; 
+                                               $resultCommentCustomer = mysqli_query($db,$queryCommentCustomer);
+                                               $commentsCustomer = mysqli_fetch_assoc($resultCommentCustomer);
+                                               mysqli_free_result($resultCommentCustomer);
+
+                                               $queryCommentProf = 'SELECT * FROM prof WHERE `id` ='.$comment['prof-id']; 
+                                               $resultCommentProf = mysqli_query($db,$queryCommentProf);
+                                               $commentsProf= mysqli_fetch_assoc($resultCommentProf);
+                                               mysqli_free_result($resultCommentProf);
+                                
+                                                ?>
+
+
+                                             <div class="media mb-4">
+                                            <div class="mr-3">
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="font-size-13 mb-1 text-capitalize">
+                                                <?php
+                                                if ($comment['customer-id'] > 0  && $comment['prof-id'] == 0 ){
+                                                    echo $commentsCustomer["first-name"] ;
+                                                    echo(' ');
+                                                    echo $commentsCustomer["last-name"] ; 
+
+                                                }else if ($comment['prof-id'] > 0  && $comment['customer-id'] == 0 ){
+                                                    echo $commentsProf["first-name"] ;
+                                                    echo(' ');
+                                                    echo $commentsProf["last-name"] ; 
+
+                                                }else{}                                          
+
+                                                ?>
+                                                </h5>
+                                                <p class="text-muted mb-1">
+                                                    <?php echo $comment["comment"] ; ?>
+                                                </p>
+                                            </div>
+                                            <div class="ml-3">
+                                                <span class="text-primary small">   <?php echo $comment["date-created"] ; ?></span>
+                                            </div>
+                                        </div>
+
+                                            
+                                      <?php endforeach ?>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
         
                                         
                                     </div>
@@ -579,6 +745,7 @@ include('sidebar.php');
 
         <script src="../assets/js/app.js"></script>
 
+<<<<<<< HEAD
         <script>
    $(document).ready(function(){
 
@@ -605,5 +772,7 @@ function sendRequest(){
 });
         </script>
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     </body>
 </html>

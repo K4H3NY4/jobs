@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <br><br><br><br><br>
 <script src="https://use.fontawesome.com/963f9846e6.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -54,8 +55,26 @@
 
 
 
+=======
+<footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <script>document.write(new Date().getFullYear())</script> © CETONVALE
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-right d-none d-sm-block">
+                                    Design & Develop by $$$$$$
+                                </div>
+                            </div>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                         </div>
                     </div>
                 </footer>
 
+<<<<<<< HEAD
                 
+=======
+
+            
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c

@@ -5,7 +5,10 @@ require('config/db.php');
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 $queryProfs = "SELECT * FROM `occupations` ORDER by RAND() LIMIT 8 ";
 $resultProfs = mysqli_query($db,$queryProfs);
 $profs =  mysqli_fetch_all($resultProfs, MYSQLI_ASSOC);
@@ -23,6 +26,7 @@ $tasks =  mysqli_fetch_all($resultTasks, MYSQLI_ASSOC);
 
 
 
+<<<<<<< HEAD
 
 $queryCounty = "SELECT * FROM `counties` ORDER by `county` ASC";
 $resultCounty = mysqli_query($db,$queryCounty);
@@ -50,6 +54,8 @@ if(isset($_POST['submit'])){
 };
 
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 mysqli_free_result($resultProfs);
 mysqli_close($db);
 
@@ -64,6 +70,7 @@ mysqli_close($db);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Housing Jobs</title>
+<<<<<<< HEAD
     <link rel="shortcut icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="swiper-bundle.min.css">
@@ -85,6 +92,12 @@ mysqli_close($db);
 
 
 
+=======
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<style>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 .col-sm-6{
     width: auto;
 }
@@ -99,7 +112,10 @@ mysqli_close($db);
 
 body{
     background-color: #f8f8fb;
+<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 }
 
 ::-webkit-scrollbar{
@@ -116,6 +132,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb:hover{
+<<<<<<< HEAD
     background: #007562 !important;;
 }
 
@@ -332,18 +349,78 @@ body{
 
        </section>
 
+=======
+    background: lime;
+}
+</style>
+<body>
+    <section class="row m-0 p-0" style="
+    background-image: url(uploads/farm-image-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    height: 80vh;
+    ">   
+        <div class="container-fluid row m-0 d-fixed" style="
+       
+        z-index:  9999;
+        height:  60px;
+        padding-top: 15px;
+        background-color: #ffffff24;
+        ">  
+            <span class="col-2 text-dark">
+                <a href="/housing-jobs" class="logo logo-dark">
+                              
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-dark.png" alt="" height="" width="100">
+                                </span>
+                            </a>
+
+                          </span>
+
+            <span class="col-5"></span>
+
+            <span class="col-5  text-right text-white " align="right"><span class=""> <a href="u/login.php" class="btn btn-sm btn-primary">Login</a></span> <span >  <a href="p/login.php" class="btn btn-sm btn-outline-success"> Login as Pro</a></span></span>
+       </div>
+
+       <div class="pl-5 ml-3" style="
+       position: relative;
+       top:25%;
+       font-size: 4.5vw;
+       color:#f8f8fb;
+      
+       ">
+<p>
+    Get Professionals
+    <br>
+    & Jobs
+</p>
+
+       </div>
+
+
+    </section>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
     <section class="row m-0 p-0" style="z-index: 99;">
         <div class=" container">
             <span class="row pt-4 font-weight-bold h5">
+<<<<<<< HEAD
           <div class="col-4 text-center text-success" >GET IDEAS</div>
           <div class="col-4 text-center text-success"><a href="professionals.php" class="text-success">   FIND PROFESSIONALS</a></div>
           <div class="col-4 text-center"> <a href="jobs.php" class="text-success"> FIND JOBS</a></div>
+=======
+          <div class="col-4 text-center text-primary" >GET IDEAS</div>
+          <div class="col-4 text-center text-primary"><a href="http://localhost/housing-jobs/professionals.php">   FIND PROFESSIONALS</a></div>
+          <div class="col-4 text-center"> <a href="http://localhost/housing-jobs/jobs.php"> FIND JOBS</a></div>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
         </div>
     </span>
     </section >
 <hr>
 
+<<<<<<< HEAD
 <div class="row" id="search">
 <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
 <div class=" col-sm-12 col-md-12 col-lg-4 col-xl-4 card "  style="
@@ -387,14 +464,26 @@ z-index:9999;
                 <span class="row">
                 <span class="col-6 h3 font-weight-bold text-success " >FIND PROFESSIONALS</span>
                 <span class="col-6 text-right font-weight-bold"> <a href="professionals.php" class="text-success"> SEE ALL </a></span>
+=======
+    <section  class="row m-0 p-0 pt-4"  style="z-index: 9;">
+            <div class="container"  style="z-index: 9;">
+                
+                <span class="row">
+                <span class="col-6 h3 font-weight-bold " >FIND PROFESSIONALS</span>
+                <span class="col-6 text-right font-weight-bold"> <a href="http://localhost/housing-jobs/professionals.php"> SEE ALL </a></span>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                 </span>
                 <br><br>
                 <div class="row">
                 <?php foreach ( $profs as $prof) :?>
 
 
+<<<<<<< HEAD
 <div class=" col-sm-6 col-md-6 col-lg-3 col-xl-3 prof" id="prof">
   <a href="prof-search.php?occupation=<?php echo  $prof['occupation']; ?>">
+=======
+<div class=" col-sm-6 col-md-6 col-lg-3 col-xl-3">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     <div class="card ">
         <div class="card-body p-2" style="height: 150px;
         background-image: url(<?php echo $prof['photo']; ?>);
@@ -403,11 +492,18 @@ z-index:9999;
         ">
             
         </div>
+<<<<<<< HEAD
         <div class="card-footer shadow" id="prof">
         <?php echo $prof['occupation']; ?>
         </div>
     </div>
     </a>
+=======
+        <div class="card-footer shadow">
+        <?php echo $prof['occupation']; ?>
+        </div>
+    </div>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 </div>
 <?php endforeach ?>
 
@@ -424,8 +520,13 @@ z-index:9999;
         <div class="container">
             <hr>
             <span class="row">
+<<<<<<< HEAD
                 <span class="col-6 h3 font-weight-bold text-success" >FIND JOBS</span>
                 <span class="col-6 text-right font-weight-bold" >  <a href="jobs.php" class="text-success">SEE ALL</a></span>
+=======
+                <span class="col-6 h3 font-weight-bold " >FIND JOBS</span>
+                <span class="col-6 text-right font-weight-bold">  <a href="http://localhost/housing-jobs/jobs.php">SEE ALL</a></span>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                 </span>
             <br>
             <div class="row">
@@ -457,6 +558,7 @@ z-index:9999;
 </section>
 
 
+<<<<<<< HEAD
 
 
 <br><br><br><br><br>
@@ -582,6 +684,12 @@ $('#myModal').on('shown.bs.modal', function () {
     },
   });
 </script>
+=======
+<footer>
+    <hr>
+    footer
+</footer>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
     
 </body>

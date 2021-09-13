@@ -23,7 +23,10 @@ if(isset($_POST['complete'])){
     if($db->error){
         echo $db->error;
     }else{
+<<<<<<< HEAD
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
         header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
     }
 }
@@ -54,8 +57,13 @@ include('sidebar.php');
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
+<<<<<<< HEAD
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Finance</a></li>
                                             <li class="breadcrumb-item active">Withdraw Requests</li>
+=======
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Jobs</a></li>
+                                            <li class="breadcrumb-item active">Professionals Available</li>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </ol>
                                     </div>
 
@@ -95,7 +103,11 @@ include('sidebar.php');
                                <td class="text-capitalize"><?php echo $prof['payment-mode']; ?></td>
                                <td><?php echo $prof['cstatus']; ?></td>
                                <td><?php echo $prof['date-created']; ?></td>
+<<<<<<< HEAD
                                <td>  <a href="request-details.php?id=<?php echo $prof['id']; ?>" class="btn btn-sm btn-success" >View Request</a>  </td>
+=======
+                               <td>  <a href="request-details.php?id=<?php echo $prof['id']; ?>" class="btn btn-sm btn-primary" >View Request</a>  </td>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                            </form>
                            </tr>
                           

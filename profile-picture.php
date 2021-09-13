@@ -40,7 +40,11 @@ if($db->error){
 echo $db->error;
 }else{
 ($sql);
+<<<<<<< HEAD
     header("Location: u/profile.php");
+=======
+    header("Location: http://localhost/housing-jobs/u/profile.php");
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 }
 

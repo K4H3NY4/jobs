@@ -30,7 +30,11 @@ include('sidebar.php');
 ?>
 
 <style>
+<<<<<<< HEAD
     .profs-section{
+=======
+    .search-jobs{
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
         display: none;
     }
 </style>
@@ -48,7 +52,11 @@ include('sidebar.php');
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
+<<<<<<< HEAD
                                     <h4 class="mb-0 font-size-18">Professionals Available </h4>
+=======
+                                    <h4 class="mb-0 font-size-18">Professionals Available <span class="ml-5 btn btn-sm btn-outline-primary" id="filter">FILTER</span></h4>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
@@ -69,8 +77,13 @@ include('sidebar.php');
                        <thead>
                            <tr>
                              
+<<<<<<< HEAD
                                <th class="text-capitalize">Profile Photo</th>
                                <th class="text-capitalize">Name</th>
+=======
+                               <th class="text-capitalize">First Name</th>
+                               <th class="text-capitalize">Last Name</th>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                <th class="text-capitalize">Occupation</th>
                                <th class="text-capitalize">County</th>
                                <th>Action</th>
@@ -86,6 +99,7 @@ include('sidebar.php');
                            <tr>
                                                     
                            
+<<<<<<< HEAD
                                 <td class="text-capitalize"> <img src="../<?php echo $prof ["picture"]; ?>" alt="" class="img-thumbnail" style="
     width: 75px;
     height: 75px;
@@ -95,6 +109,13 @@ include('sidebar.php');
                                <td class="text-capitalize"><?php echo $prof['occupation']; ?></td>
                                <td class="text-capitalize"><?php echo $prof['county']; ?></td>
                                <td><a class="btn btn-sm btn-success" href="prof-profile.php?id=<?php echo  base64_encode($prof['id']); ?>">View Profile</a></td>
+=======
+                                <td class="text-capitalize"><?php echo $prof['first-name']; ?></td>
+                               <td class="text-capitalize"><?php echo $prof['last-name']; ?></td>
+                               <td class="text-capitalize"><?php echo $prof['occupation']; ?></td>
+                               <td class="text-capitalize"><?php echo $prof['county']; ?></td>
+                               <td><a class="btn btn-sm btn-primary" href="prof-profile.php?id=<?php echo  base64_encode($prof['id']); ?>">View Profile</a></td>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                            </tr>
                           
                            <?php endforeach   ?>
@@ -106,7 +127,44 @@ include('sidebar.php');
 
                         </div>
 
+<<<<<<< HEAD
                       
+=======
+                        <div class="row" id="profs-section">
+                                               
+                        <?php foreach ( $profs as $prof) :?>
+
+                            <div class="col-xl-3 col-sm-6">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <div class="avatar-sm mx-auto mb-4">
+                                            <span class="avatar-title rounded-circle bg-soft-primary text-primary font-size-16">
+                                                D
+                                            </span>
+                                        </div>
+                                        <h5 class="font-size-15"> <a href="prof-profile.php?id=<?php echo  base64_encode($prof['id']); ?>" class="text-dark text-capitalize"><?php echo $prof['first-name'] ,' ' ,$prof['last-name']; ?> </a></h5>
+                                        <p class="text-muted text-capitalize"><?php echo $prof['occupation']; ?></p>
+
+                                        <div>
+                                        <a href="prof-profile.php?id=<?php echo  base64_encode($prof['id']); ?>" class="badge badge-primary font-size-11 m-1"><?php echo $prof['county']; ?></a>
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent border-top">
+                                        <div class="contact-links d-flex font-size-20">
+                                            
+                                            <div class="flex-fill">
+                                            <a href="prof-profile.php?id=<?php echo  base64_encode($prof['id']); ?>"data-toggle="tooltip" data-placement="top" title="" data-original-title="Profile"><i class="bx bx-user-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+<?php endforeach ?>
+                            
+                        </div>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                         <!-- end row -->
 
                         <!-- end row -->
@@ -197,7 +255,29 @@ include('sidebar.php');
         <script src="../assets/js/app.js"></script>
 
         
+<<<<<<< HEAD
         
+=======
+        <script> 
+    $(document).ready(function() {
+
+$( '#filter' ).click(function () {
+$('#filter-section').toggle();
+$('#profs-section').toggle();
+
+    
+});
+
+
+
+
+});
+
+
+
+
+</script>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
     </body>
 </html>

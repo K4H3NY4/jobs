@@ -23,24 +23,37 @@ $result = mysqli_query($db,$query);
 $profs = mysqli_fetch_assoc($result);
 mysqli_free_result($result);
 
+<<<<<<< HEAD
 
 $queryCount =" SELECT COUNT(`prof-id`) FROM `tasks` WHERE `prof-id` ='$profid' AND  `cstatus`='Taken' or `cstatus`='Closed' ";
+=======
+$queryCount =" SELECT COUNT(`prof-id`) FROM `tasks` WHERE `cstatus`='Taken' or `cstatus`='Closed' AND `prof-id` ='$profid'";
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 $resultCount =  mysqli_query($db,$queryCount);
 $count = mysqli_fetch_assoc($resultCount);
 mysqli_free_result($resultCount);
 
+<<<<<<< HEAD
 $queryPending =" SELECT COUNT(`prof-id`) FROM `tasks` WHERE `prof-id` ='$profid' AND   `cstatus`='Taken' or  `cstatus`='Closed' AND `funds-status`='Pending'  ";
+=======
+$queryPending =" SELECT COUNT(`prof-id`) FROM `tasks` WHERE  `cstatus`='Taken' or  `cstatus`='Closed' AND `funds-status`='Pending'   AND `prof-id` ='$profid'";
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 $resultPending =  mysqli_query($db,$queryPending);
 $pending = mysqli_fetch_assoc($resultPending);
 mysqli_free_result($resultPending);
 
 
+<<<<<<< HEAD
 $queryTasks = "SELECT * FROM `tasks` WHERE  `prof-id` ='$profid' AND `cstatus`='Taken' or `cstatus`='Closed' ORDER by `time-created` DESC";
+=======
+$queryTasks = "SELECT * FROM `tasks` WHERE `cstatus`='Taken' or `cstatus`='Closed' AND `prof-id` ='$profid'  ORDER by `time-created` DESC";
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 $resultTasks = mysqli_query($db,$queryTasks);
 $tasks =  mysqli_fetch_all($resultTasks, MYSQLI_ASSOC);
 mysqli_free_result($resultTasks);
 
 
+<<<<<<< HEAD
 
 if(isset($_POST['changePassword'])){
 
@@ -112,6 +125,8 @@ if($db->error){
 
 
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 mysqli_close($db);
 
 
@@ -158,11 +173,19 @@ include('sidebar.php');
                         <div class="row">
                             <div class="col-xl-4">
                                 <div class="card overflow-hidden">
+<<<<<<< HEAD
                                     <div class="bg-soft-success">
                                         <div class="row">
                                             <div class="col-7">
                                                 <div class="text-success p-3">
                                                     <h5 class="text-success">Welcome Back !</h5>
+=======
+                                    <div class="bg-soft-primary">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <div class="text-primary p-3">
+                                                    <h5 class="text-primary">Welcome Back !</h5>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p>It will seem like simplified</p>
                                                 </div>
                                             </div>
@@ -182,7 +205,11 @@ include('sidebar.php');
                                                 </div>
                                                 <h5 class="font-size-15 text-truncate"><?php echo $profs ["first-name"]; echo ' '; echo $profs['last-name']; ?></h5>
                                                 <p class="text-muted mb-0 text-truncate"><?php echo $profs ["occupation"];?></p>
+<<<<<<< HEAD
                                                 <p href="" id="editProfile" class="btn btn-success waves-effect waves-light btn-sm mt-2">Edit Profile <i class="mdi mdi-arrow-right ml-1"></i></p>
+=======
+                                                <p href="" id="editProfile" class="btn btn-primary waves-effect waves-light btn-sm mt-2">Edit Profile <i class="mdi mdi-arrow-right ml-1"></i></p>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </div>
 
                                             <div class="col-8 pt-3 table-responsive">
@@ -214,6 +241,7 @@ include('sidebar.php');
                                    
                                     </div>
                                     <span id="edit-profile">
+<<<<<<< HEAD
                         <div class="pl-3">
                         <h5>The Services you are offering</h5>
                         <form action="" method="POST">
@@ -241,6 +269,10 @@ include('sidebar.php');
              
                         </div>
                                   
+=======
+
+                                    
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                     <hr>
                     <h5 class="pl-3">Change Password</h5>
                                             <table class="table table-nowrap mb-0 pl-3">
@@ -259,7 +291,11 @@ include('sidebar.php');
                                                         <td><input type="password" name="confirmPassword"></td>
                                                     </tr>
                                                     <tr>
+<<<<<<< HEAD
                                                     <th> <input class="btn btn-sm btn-success" type="submit" name="changePassword" value="Update"></th>
+=======
+                                                    <th> <input class="btn btn-sm btn-primary" type="submit" name="changePassword" value="Update"></th>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     
                                                     </tr>
                                                   
@@ -271,6 +307,7 @@ include('sidebar.php');
 
                                             <h5 class="pl-3">Change Profile Picture</h5>
                                           
+<<<<<<< HEAD
                                                 <form action="../prof-pic.php" method="POST"  class="pl-3" enctype="multipart/form-data" >
                                                 
                                                         Upload Photo
@@ -291,6 +328,15 @@ include('sidebar.php');
                                                      <input type="hidden" class="pl-3" name="update_id" value="<?php echo $profs["id"]; ?>">
 
                                                      <input class="btn btn-sm btn-success pl-3" type="submit" name="submit-bgpic">
+=======
+                                                <form action="../prof-pic.php" method="POST"  enctype="multipart/form-data" >
+                                                
+                                                        Upload Photo
+                                                     <input class="form-control" type="file" name="uploadfiled" id="uploaded" >
+                                                     <input type="hidden" name="update_id" value="<?php echo $profs["id"]; ?>">
+
+                                                     <input class="btn btn-sm btn-primary" type="submit" name="submit-profpic">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     </form>
                                     </span>        
                                                 
@@ -318,7 +364,11 @@ include('sidebar.php');
                                                         <h4 class="mb-0"><?php echo $count['COUNT(`prof-id`)'];?></h4>
                                                     </div>
         
+<<<<<<< HEAD
                                                     <div class="mini-stat-icon avatar-sm align-self-center rounded-circle bg-success">
+=======
+                                                    <div class="mini-stat-icon avatar-sm align-self-center rounded-circle bg-primary">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                         <span class="avatar-title">
                                                             <i class="bx bx-check-circle font-size-24"></i>
                                                         </span>
@@ -336,7 +386,11 @@ include('sidebar.php');
                                                         <h4 class="mb-0"><?php echo $pending['COUNT(`prof-id`)'];?></h4>
                                                     </div>
         
+<<<<<<< HEAD
                                                     <div class="avatar-sm align-self-center mini-stat-icon rounded-circle bg-success">
+=======
+                                                    <div class="avatar-sm align-self-center mini-stat-icon rounded-circle bg-primary">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                         <span class="avatar-title">
                                                             <i class="bx bx-hourglass font-size-24"></i>
                                                         </span>
@@ -354,7 +408,11 @@ include('sidebar.php');
                                                         <h4 class="mb-0"><?php  echo (" Ksh  $available_balance" ) ; ?></h4>
                                                     </div>
         
+<<<<<<< HEAD
                                                     <div class="avatar-sm align-self-center mini-stat-icon rounded-circle bg-success">
+=======
+                                                    <div class="avatar-sm align-self-center mini-stat-icon rounded-circle bg-primary">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                         <span class="avatar-title">
                                                             <i class="bx bx-package font-size-24"></i>
                                                         </span>

@@ -5,6 +5,12 @@ require('../config/db.php');
 date_default_timezone_set('Africa/Nairobi');
 
 
+<<<<<<< HEAD
+=======
+
+    
+
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 $queryProfs = "SELECT * FROM `occupations` ORDER by `id` DESC";
 $resultProfs = mysqli_query($db,$queryProfs);
 $profs =  mysqli_fetch_all($resultProfs, MYSQLI_ASSOC);
@@ -28,13 +34,22 @@ if(isset($_POST['delete'])){
     echo $db->error;
     }else{
     
+<<<<<<< HEAD
 header('Location: '.$_SERVER['PHP_SELF']);      
+=======
+       header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+    
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     }
 }
     
 
 
+<<<<<<< HEAD
 //mysqli_close($db);
+=======
+mysqli_close($db);
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 
 
@@ -66,8 +81,13 @@ include('sidebar.php');
                                    
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
+<<<<<<< HEAD
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Occupations</a></li>
                                             <li class="breadcrumb-item active">Listed Occupations</li>
+=======
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Jobs</a></li>
+                                            <li class="breadcrumb-item active">Professionals Available</li>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </ol>
                                     </div>
 
@@ -82,7 +102,11 @@ include('sidebar.php');
                                        
     Enter Occupation <input type="text" placeholder="Plumber" name="occupation"   class="form-control text-sm ml-3 mr-3">
     Enter Image: <input type="file" class="form-control ml-3 " name="uploadfile">
+<<<<<<< HEAD
     <button class="btn  btn-success ml-3" name="submit">Submit</button>
+=======
+    <button class="btn  btn-primary ml-3" name="submit">Submit</button>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         
                                         
                                         </form>
@@ -104,8 +128,12 @@ include('sidebar.php');
                            
                             <td class="text-capitalize"><?php echo $prof['occupation']; ?></td>    
                             <td >
+<<<<<<< HEAD
                          <form action="<?php echo $_SERVER ['PHP_SELF']; ?>
                          " method="post">
+=======
+                         <form action="<?php echo $_SERVER ['PHP_SELF']; ?>" method="post">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                         <input type="hidden" value="<?php echo $prof['id'];?> " name="delete_id">      
                          <button class="btn btn-sm btn-danger ml-3" name="delete">Delete</button>
                          </form>

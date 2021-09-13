@@ -4,7 +4,11 @@ require('../config/db.php');
 session_start();
 
 if(!isset($_SESSION["profid"])){
+<<<<<<< HEAD
 header("Location: login.php");
+=======
+header("Location: prof-login.php");
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 exit(); } 
 else if(isset($_SESSION["profid"])){
    $profid = $_SESSION['profid'];

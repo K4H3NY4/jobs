@@ -45,7 +45,11 @@ $result = mysqli_query($db,$query
           
        } else {
            echo ('
+<<<<<<< HEAD
            <div class="alert  alert-dismissible  alert-success" role="alert">
+=======
+           <div class="alert  alert-dismissible  alert-primary" role="alert">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
            password dont match
     </div>
          

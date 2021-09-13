@@ -9,6 +9,7 @@ session_start();
  *   
  **/ 
 
+<<<<<<< HEAD
 
 
  
@@ -18,6 +19,8 @@ $tasks =  mysqli_fetch_all($resultTasks, MYSQLI_ASSOC);
 
 
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 if(isset($_SESSION["profid"])){
     $profid = $_SESSION['profid'];
     $customerId = 0;
@@ -143,6 +146,10 @@ include('sidebar.php');
                                 <div class="card">
                                     <div class="card-body">
                                         <div class="media">
+<<<<<<< HEAD
+=======
+                                            <img src="assets/images/companies/img-1.png" alt="" class="avatar-sm mr-4">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
                                             <div class="media-body overflow-hidden">
                                                 <h5 class="text-truncate font-size-15"><?php  echo $project['title']; ?></h5>
@@ -151,6 +158,7 @@ include('sidebar.php');
                                             </div>
                                         </div>
 
+<<<<<<< HEAD
                                         <div class="row task-dates">
                                             <div class="col-sm-3 col-6">
                                                 <div class="mt-4">
@@ -169,20 +177,49 @@ include('sidebar.php');
                                             <div class="col-sm-2 col-6">
                                                 <div class="mt-4">
                                                     <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-success"></i> Budget</h5>
+=======
+                                        <h5 class="font-size-15 mt-4">Description :</h5>
+
+                                        <p class="text-muted"><?php echo $project['description'];  ?></p>
+
+                                       
+                                        
+                                        <div class="row task-dates">
+                                            <div class="col-sm-3 col-6">
+                                                <div class="mt-4">
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar mr-1 text-primary"></i> Start Posted</h5>
+                                                    <p class="text-muted mb-0"><?php  echo $project['time-created'] ?></p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-sm-3 col-6">
+                                                <div class="mt-4">
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-primary"></i> Budget</h5>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p class="text-muted mb-0"><?php echo $project['price']; ?></p>
                                                 </div>
                                             </div>
 
+<<<<<<< HEAD
                                             <div class="col-sm-2 col-6">
                                                 <div class="mt-4">
                                                     <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-success"></i> Status</h5>
+=======
+                                            <div class="col-sm-3 col-6">
+                                                <div class="mt-4">
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-primary"></i> Status</h5>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p class="text-muted mb-0"><?php echo $project['cstatus']; ?></p>
                                                 </div>
                                             </div>
 
                                             <div class="col-sm-3 col-6">
                                                 <div class="mt-4">
+<<<<<<< HEAD
                                                     <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-success"></i> Action</h5>
+=======
+                                                    <h5 class="font-size-14"><i class="bx bx-calendar-check mr-1 text-primary"></i> Action</h5>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p class="text-muted mb-0">
                                                     <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>"  >
 
@@ -200,7 +237,11 @@ include('sidebar.php');
                                                         else if(isset($_SESSION["profid"])){
 
                                                             if ($project['cstatus'] == 'Open'){
+<<<<<<< HEAD
                                                                 echo ('<button class="btn btn-sm btn-outline-success" name="take-job">Take Job</button>');
+=======
+                                                                echo ('<button class="btn btn-sm btn-outline-primary" name="take-job">Take Job</button>');
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                             }else{
                                                                 echo(' <button class="btn btn-sm btn-outline-danger disabled">Job Closed</button> ');
                                                             };
@@ -217,6 +258,7 @@ include('sidebar.php');
 
                                         </div>
 
+<<<<<<< HEAD
                                         <h5 class="font-size-15 mt-4">Description :</h5>
 
                                         <p class="text-muted"><?php echo $project['description'];  ?></p>
@@ -225,6 +267,8 @@ include('sidebar.php');
                                         
                                        
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         <div class="text-muted mt-4" >
                                             <img src="<?php echo $project['photo'];  ?>" alt="" width="100%" height="100%">
                                         </div>
@@ -233,6 +277,7 @@ include('sidebar.php');
                             </div>
                             <!-- end col -->
                             <div class="col-lg-4  ">
+<<<<<<< HEAD
                                                        
                                                             <h4 class="card-title"> SIMILAR JOBS</h4><br>
                                                         <div class="row"> 
@@ -271,6 +316,9 @@ include('sidebar.php');
 
                            <!-- <div class="card">
                                 
+=======
+                            <div class="card">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                     <div class="card-body">
                                         <h4 class="card-title mb-4">Comments</h4>
 
@@ -290,7 +338,11 @@ include('sidebar.php');
 }else {
     echo('
     <input type="text" placeholder="Add Comment" name="comment" class="form-control w-75 ml-3"> 
+<<<<<<< HEAD
     <button class="btn btn-sm btn-success ml-3" type="submit" name="commentAdd">Comment</button>
+=======
+    <button class="btn btn-sm btn-primary ml-3" type="submit" name="commentAdd">Comment</button>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     ');
 }
 
@@ -346,7 +398,11 @@ include('sidebar.php');
                                                 </p>
                                             </div>
                                             <div class="ml-3">
+<<<<<<< HEAD
                                                 <span class="text-success small">   <?php echo $comment["date-created"] ; ?></span>
+=======
+                                                <span class="text-primary small">   <?php echo $comment["date-created"] ; ?></span>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </div>
                                         </div>
 

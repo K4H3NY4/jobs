@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
@@ -34,6 +35,8 @@
 </style>
     
     
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
          <!-- ========== Left Sidebar Start ========== -->
          <div class="vertical-menu">
 
@@ -52,6 +55,7 @@
                 </a>
                
             </li>
+<<<<<<< HEAD
   
             <li>
                 <a href="https://housing.pacisvorgel.co.ke" class="has-arrow waves-effect">
@@ -60,6 +64,8 @@
                 </a>
             </li>
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
         <li>
                 <a href="wallet.php" class="has-arrow waves-effect">
@@ -86,7 +92,17 @@
                
             </li>
 
+<<<<<<< HEAD
          
+=======
+            <li>
+                <a href="jobs.php" class="has-arrow waves-effect">
+                    <i class="bx bx-task"></i>
+                    <span>Browse Job</span>
+                </a>
+               
+            </li>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
             <li>
                 <a href="professionals.php" class="has-arrow waves-effect">

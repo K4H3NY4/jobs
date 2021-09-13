@@ -25,10 +25,14 @@ $resultRate = mysqli_query($db,$queryRate);
 $rates =   mysqli_fetch_assoc($resultRate);
 mysqli_free_result($resultRate);
 
+<<<<<<< HEAD
 $queryTasks = "SELECT * FROM `tasks` where `prof-id` = '$profid'   ORDER by `time-created` DESC";
 $resultTasks = mysqli_query($db,$queryTasks);
 $tasks =  mysqli_fetch_all($resultTasks, MYSQLI_ASSOC);
 mysqli_free_result($resultTasks);
+=======
+
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 
 if(isset($_POST['withdraw-funds']) && $_POST['amount'] !=NULL && $available_balance > 0  ){
@@ -57,6 +61,7 @@ if(isset($_POST['withdraw-funds']) && $_POST['amount'] !=NULL && $available_bala
 $db->query($sql);
 
     }else{
+<<<<<<< HEAD
         echo('enter above 0 and available balance');
     }
   
@@ -85,6 +90,20 @@ $db->query($sql);
         
         mail($to,$subject,$message,$headers);
         
+=======
+        echo('enter abovee 0 and anvailable balance');
+    }
+
+
+
+
+  
+
+
+    if($db->error){
+        echo $db->error;
+    }else{
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
         header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
 
     }
@@ -133,7 +152,11 @@ include('sidebar.php');
                                         
                                         <div class="media">
                                             <div class="mr-4">
+<<<<<<< HEAD
                                                 <i class="mdi mdi-account-circle text-success h1"></i>
+=======
+                                                <i class="mdi mdi-account-circle text-primary h1"></i>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </div>
 
                                             <div class="media-body">
@@ -194,7 +217,11 @@ include('sidebar.php');
 
                                            
                                             <div class="pl-3">
+<<<<<<< HEAD
                                                 <button type="submit" class="btn btn-success w-md pl-1" name="withdraw-funds" >Submit</button>
+=======
+                                                <button type="submit" class="btn btn-primary w-md pl-1" name="withdraw-funds" >Submit</button>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                               
                                             </div>
                                         </form>
@@ -233,6 +260,7 @@ include('sidebar.php');
                                                     <span class=" d-sm-block">Withdraws</span> 
                                                 </a>
                                             </li>
+<<<<<<< HEAD
 
                                             <li class="nav-item">
                                                 <a class="nav-link" data-toggle="tab" href="wallet.php#profile1" role="tab" id="withdraws" aria-selected="false">
@@ -243,15 +271,31 @@ include('sidebar.php');
                                             
                                             <li class="nav-item">
                                          <a href="wallet.php" class="text-white btn btn-sm btn-success ">Refresh</a>
+=======
+                                            
+                                            <li class="nav-item">
+                                         <a href="wallet.php" class="text-white btn btn-sm btn-primary ">Refresh</a>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                 </a>
                                             </li>
                                            
                                         </ul>
+<<<<<<< HEAD
                                     
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
         
                                         <!-- Tab panes -->
                                         <div class="tab-content p-3 text-muted">
                                             <div class="tab-pane active" id="home1" role="tabpanel">
+<<<<<<< HEAD
+=======
+                                     
+                                   
+   
+   
+
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
            
                <div class="table-responsive">
                    <table id="datatable" class="table table-hover dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -296,6 +340,7 @@ include('sidebar.php');
 
                                             </div>
                                             <div class="tab-pane " id="profile1" role="tabpanel">
+<<<<<<< HEAD
                                             <div class="table-responsive">
                    <table id="datatable" class="table table-hover dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                        <thead>
@@ -332,6 +377,17 @@ include('sidebar.php');
                        </tbody>
                    </table>
                </div>
+=======
+                                                <p class="mb-0">
+                                                    Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                                                    single-origin coffee squid. Exercitation +1 labore velit, blog
+                                                    sartorial PBR leggings next level wes anderson artisan four loko
+                                                    farm-to-table craft beer twee. Qui photo booth letterpress,
+                                                    commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
+                                                    vinyl cillum PBR. Homo nostrud organic, assumenda labore
+                                                    aesthetic magna delectus.
+                                                </p>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </div>
                                             <div class="tab-pane" id="messages1" role="tabpanel">
                                                 <p class="mb-0">

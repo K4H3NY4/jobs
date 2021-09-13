@@ -24,13 +24,21 @@ if(isset($_POST['rate-update'])){
     if($db->error){
         echo $db->error;
     }else{
+<<<<<<< HEAD
        header('Location: '.$_SERVER['PHP_SELF']);  
+=======
+        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     }
 }
 
 
 
+<<<<<<< HEAD
 //mysqli_close($db);
+=======
+mysqli_close($db);
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
    
 include('topbar.php');
 include('sidebar.php');
@@ -56,8 +64,13 @@ include('sidebar.php');
                                    
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
+<<<<<<< HEAD
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Service Charge</a></li>
                                             <li class="breadcrumb-item active">%</li>
+=======
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Jobs</a></li>
+                                            <li class="breadcrumb-item active">Professionals Available</li>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </ol>
                                     </div>
 
@@ -92,7 +105,11 @@ include('sidebar.php');
                             <td class="text-capitalize"><?php echo $prof['service_rate']; ?></td>    
                             <input type="hidden" name="update_id" value="<?php echo $prof["id"]; ?>">
                             <td> <input type="number" min="0" max="100" placeholder="Update Rate" name="rate"   class="form-control text-sm"></td>
+<<<<<<< HEAD
                            <td ><button class="btn btn-sm btn-success" name="rate-update">Update</button></td>
+=======
+                           <td ><button class="btn btn-sm btn-primary" name="rate-update">Update</button></td>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                          </form> 
                            </tr>
                           

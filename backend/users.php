@@ -68,7 +68,11 @@ include('sidebar.php');
                                <td class="text-capitalize"><?php echo $prof['last-name']; ?></td>
                                <td><?php echo $prof['email']; ?></td>
                                  <td><?php echo $prof['phone']; ?></td>
+<<<<<<< HEAD
                                <td> <a href="user-profile.php?id=<?php echo   base64_encode($prof['id']); ?>"class="btn btn-sm btn-success">View Profile</a> </td>
+=======
+                               <td> <a href="user-profile.php?id=<?php echo   base64_encode($prof['id']); ?>"class="btn btn-sm btn-primary">View Profile</a> </td>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                            </tr>
                           
                            <?php endforeach   ?>

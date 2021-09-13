@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
@@ -32,6 +33,9 @@ body{font-family: 'Roboto', sans-serif;
 </style>
 
 <!-- ========== Left Sidebar Start ========== -->
+=======
+         <!-- ========== Left Sidebar Start ========== -->
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
          <div class="vertical-menu">
 
 <div data-simplebar class="h-100">
@@ -50,6 +54,7 @@ body{font-family: 'Roboto', sans-serif;
                
             </li>
 
+<<<<<<< HEAD
             <li>
                 <a href="https://housing.pacisvorgel.co.ke" class="has-arrow waves-effect">
                     <i class="bx bx-home-circle"></i>
@@ -57,6 +62,8 @@ body{font-family: 'Roboto', sans-serif;
                 </a>
             </li>
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
         <li>
                 <a href="wallet.php" class="has-arrow waves-effect">
                     <i class="bx bx-bitcoin"></i>
@@ -74,6 +81,7 @@ body{font-family: 'Roboto', sans-serif;
                 
             </li>
 
+<<<<<<< HEAD
             
             <li>
                 <a href="bids.php" class="has-arrow waves-effect">
@@ -83,6 +91,8 @@ body{font-family: 'Roboto', sans-serif;
                 
             </li>
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
             <li>
                 <a href="jobs.php" class="has-arrow waves-effect">
                     <i class="bx bx-briefcase-alt-2"></i>

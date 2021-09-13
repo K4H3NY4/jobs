@@ -56,6 +56,7 @@ $result = mysqli_query($db,$query
     
        echo $db->error;
    }else{
+<<<<<<< HEAD
        $to = $email;
        $subject = "ACCOUNT CREATED";
        $message = "You have successful open an acount" ;
@@ -69,6 +70,9 @@ $result = mysqli_query($db,$query
        /*$headers .= 'Cc: kahenyaj@gmail.com' . "\r\n";*/
        
        mail($to,$subject,$message,$headers);
+=======
+       echo "submitted";
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
        header("Location: profile.php");
    }      
        } else   {
@@ -114,6 +118,7 @@ $result = mysqli_query($db,$query
 
     <body>
         <div class="home-btn d-none d-sm-block">
+<<<<<<< HEAD
             <a href="index.php" class="text-dark"><i class="fas fa-home h2"></i></a>
         </div>
         <div class="account-pages my-5 pt-sm-5">
@@ -147,16 +152,41 @@ Learn more about your dashboard. Visit our Support Site
                                         </div>
                                     </div>
                                     <div class="d-none col-5 align-self-end">
+=======
+            <a href="index.html" class="text-dark"><i class="fas fa-home h2"></i></a>
+        </div>
+        <div class="account-pages my-5 pt-sm-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5">
+                        <div class="card overflow-hidden">
+                            <div class="bg-soft-primary">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <div class="text-primary p-4">
+                                            <h5 class="text-primary">Free Register</h5>
+                                            <p>Get your free Cetonvale account now.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 align-self-end">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         <img src="../assets/images/profile-img.png" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                             <div class="card-body pt-0"> 
                                 <div>
+<<<<<<< HEAD
                                     <a href="index.php">
                                         <div class="d-none avatar-md  profile-user-wid mb-4">
                                             <span class="d-none avatar-title  bg-light">
                                                 <img src="../assets/images/logo.png" alt="" class="rounded-circle" height="34">
+=======
+                                    <a href="index.html">
+                                        <div class="avatar-md profile-user-wid mb-4">
+                                            <span class="avatar-title rounded-circle bg-light">
+                                                <img src="../assets/images/logo.svg" alt="" class="rounded-circle" height="34">
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </span>
                                         </div>
                                     </a>
@@ -164,22 +194,37 @@ Learn more about your dashboard. Visit our Support Site
                                 <div class="p-2">
                                 
                                     <form class="form-horizontal"   action="<?php $_SERVER['PHP_SELF']; ?>"  method="POST">
+<<<<<<< HEAD
                                     <img src="../assets/images/logo.png" alt="" class=" mb-3 "  height="50">
 
 
                                     <div class="form-group">
                                             <label for="username">First Name</label>
                                             <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
+=======
+
+                                    <div class="form-group">
+                                            <label for="username">First Name</label>
+                                            <input type="text" class="form-control" name="firstName" placeholder="Enter phone" required>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </div>
 
                                         <div class="form-group">
                                             <label for="username">Last Name</label>
+<<<<<<< HEAD
                                             <input type="text" class="form-control" name="lastName" placeholder="Last Name" required>
+=======
+                                            <input type="text" class="form-control" name="lastName" placeholder="Enter phone" required>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </div>
 
                                   
                                         <div class="form-group">
+<<<<<<< HEAD
                                             <label for="useremail">E-mail</label>
+=======
+                                            <label for="useremail">Email</label>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             <input type="email" class="form-control" name="email" placeholder="Enter email" required>        
                                         </div>
                 
@@ -202,16 +247,24 @@ Learn more about your dashboard. Visit our Support Site
                                         
 
                               <div class="mt-4">
+<<<<<<< HEAD
                                             <button class="btn btn-success btn-block waves-effect waves-light" name="register" type="submit">Register</button>
                                             <br>
                                             <p class="text-center pt-3">Already have an account ? <a href="login.php" class="font-weight-medium text-success"> Login</a> </p>
 
+=======
+                                            <button class="btn btn-primary btn-block waves-effect waves-light" name="register" type="submit">Register</button>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </div>
 
                                       
                 
                                         <div class="mt-4 text-center">
+<<<<<<< HEAD
                                             <p class="mb-0">By registering you agree to the Cetonvale <a href="#" class="text-success">Terms of Use</a></p>
+=======
+                                            <p class="mb-0">By registering you agree to the Cetonvale <a href="dashboard/login.php" class="text-primary">Terms of Use</a></p>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </div>
                                     </form>
                                 </div>
@@ -221,11 +274,17 @@ Learn more about your dashboard. Visit our Support Site
                         <div class="mt-5 text-center">
                             
                             <div>
+<<<<<<< HEAD
                                 <p>© <script>document.write(new Date().getFullYear())</script>. Crafted with <i class="mdi mdi-heart text-danger"></i> by Creative Haven</p>
+=======
+                                <p>Already have an account ? <a href="login.php" class="font-weight-medium text-primary"> Login</a> </p>
+                                <p>© 2020. Crafted with <i class="mdi mdi-heart text-danger"></i> by Cetonvale</p>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                             </div>
                         </div>
 
                     </div>
+<<<<<<< HEAD
 <div class="col-8" align="center">
 
 
@@ -235,6 +294,8 @@ Learn more about your dashboard. Visit our Support Site
 
 </div>
 
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                 </div>
             </div>
         </div>
@@ -250,4 +311,7 @@ Learn more about your dashboard. Visit our Support Site
         <script src="../assets/js/app.js"></script>
     </body>
 </html>
+<<<<<<< HEAD
 <?php include('topbaru.php');?>
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c

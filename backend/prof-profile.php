@@ -34,12 +34,16 @@ include('sidebar.php');
 
    
 ?>
+<<<<<<< HEAD
 <style>
 
 .checkout-tabs .nav-pills .nav-link.active {
     background-color: #2a9d48;
 }
 </style>
+=======
+
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 
             <!-- ============================================================== -->

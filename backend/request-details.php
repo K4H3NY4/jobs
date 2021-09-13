@@ -8,6 +8,10 @@ $query = 'SELECT * FROM withdraw WHERE  id =  '.$id ;
 $result = mysqli_query($db,$query);
 $project = mysqli_fetch_assoc($result);
 $taskid = base64_decode($id);
+<<<<<<< HEAD
+=======
+
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 mysqli_free_result($result);
 
 $profquery = 'SELECT * FROM prof WHERE  id = '.$project['prof-id'];
@@ -29,6 +33,7 @@ mysqli_free_result($customerresult);
  * 
  *  */
 
+<<<<<<< HEAD
  /*
 
 if( $project['id'] == NULL ){
@@ -36,6 +41,69 @@ if( $project['id'] == NULL ){
 }else{}
 
 */
+=======
+ 
+
+if( $project['id'] == NULL ){
+    header("Location: ../404.php");
+}else{
+    
+
+}
+
+
+/**
+ * 
+ * The professional can take the project 
+ * the project will be assigned to the professional
+ * 
+ * ** */
+
+if(isset($_POST['take-job'])){
+    $update_id = mysqli_real_escape_string($db, $_POST['update_id']);
+    $query = "UPDATE tasks SET  `cstatus` = 'Taken' , `prof-id`=$profid, `time-taken`=now() WHERE id = {$update_id} ";
+
+    $db->query($query);
+    if($db->error){
+        echo $db->error;
+    }else{
+        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+    }
+}
+
+
+
+
+/**
+ * 
+ * The professional can cancel the project 
+ * the project will be open and available of the open jobs listings
+ * 
+ * ** */
+
+if(isset($_POST['cancel-job'])){
+    $update_id = mysqli_real_escape_string($db, $_POST['update_id']);
+    $query = "UPDATE tasks SET  `cstatus` = 'Open' ,`prof-id`='0', `time-taken`=now() WHERE id = {$update_id} ";
+
+    $db->query($query);
+    if($db->error){
+        echo $db->error;
+    }else{
+        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+    }
+}
+
+
+
+
+
+
+$queryComment = "SELECT * FROM comments WHERE `task-id` = '$taskid' ORDER BY `id` DESC ";
+$resultComment = mysqli_query($db,$queryComment);
+$comments = mysqli_fetch_all($resultComment, MYSQLI_ASSOC);
+mysqli_free_result($resultComment);
+
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 
 if(isset($_POST['completeTrans']) && $_POST['transId'] != NULL) {
@@ -50,6 +118,7 @@ if(isset($_POST['completeTrans']) && $_POST['transId'] != NULL) {
     if($db->error){
     echo $db->error;
     }else{
+<<<<<<< HEAD
     
             /**
              * send mail to customer
@@ -69,15 +138,24 @@ if(isset($_POST['completeTrans']) && $_POST['transId'] != NULL) {
             
    header("Location: request-details.php?id=$id");
 
+=======
+    ($sql);
+        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     
     }
     
     
     }
+<<<<<<< HEAD
     
          
 
    // mysqli_close($db);
+=======
+
+    mysqli_close($db);
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     
 
 include('topbar.php');
@@ -276,7 +354,11 @@ include('sidebar.php');
                                         
                                       echo('">
                                         <input type="text" placeholder="Enter Transaction ID" name="transId" class="form-control w-75 ml-3"> 
+<<<<<<< HEAD
                                         <button class="btn btn-sm btn-success ml-3" type="submit" name="completeTrans">Update</button>
+=======
+                                        <button class="btn btn-sm btn-primary ml-3" type="submit" name="completeTrans">Update</button>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </form>
                                         </div>
                                         </div>

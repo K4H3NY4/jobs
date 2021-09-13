@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
+=======
+<?php
+
+?>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 <!DOCTYPE html>
 <html>
@@ -9,7 +15,11 @@
 </head>
 <body>
 <?php
+<<<<<<< HEAD
 	require('config/db.php');
+=======
+	require('db.php');
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     // If form submitted, insert values into the database.
     if (isset($_REQUEST['phone'])){
 		$username = stripslashes($_REQUEST['username']); // removes backslashes

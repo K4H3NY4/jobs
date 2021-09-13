@@ -47,7 +47,11 @@ include('sidebar.php');
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
+<<<<<<< HEAD
                                     <h4 class="mb-0 font-size-18">Jobs Available <span class="ml-5 btn btn-sm btn-outline-success" id="filter">FILTER</span></h4>
+=======
+                                    <h4 class="mb-0 font-size-18">Jobs Available <span class="ml-5 btn btn-sm btn-outline-primary" id="filter">FILTER</span></h4>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
@@ -91,7 +95,11 @@ include('sidebar.php');
                                <td class="text-capitalize"><?php echo $task['town']; ?></td>
                                <td class="text-capitalize">Ksh <?php echo $task['price']; ?></td>
                                <td class="text-capitalize"><?php echo $task['time-created']; ?></td>
+<<<<<<< HEAD
                                <td><a class="btn btn-sm btn-success" href="project-details.php?id=<?php echo  base64_encode($task['id']); ?>">View Job</a></td>
+=======
+                               <td><a class="btn btn-sm btn-primary" href="project-details.php?id=<?php echo  base64_encode($task['id']); ?>">View Job</a></td>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                            </tr>
                           
                            <?php endforeach   ?>
@@ -127,7 +135,11 @@ include('sidebar.php');
                                     <div class="px-4 py-3 border-top">
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item mr-3">
+<<<<<<< HEAD
                                                 <span class="badge badge-success text-uppercase"><?php echo $task['category'];?></span>
+=======
+                                                <span class="badge badge-primary text-uppercase"><?php echo $task['category'];?></span>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </li>
                                             <li class="list-inline-item mr-3" data-toggle="tooltip" data-placement="top" title="" data-original-title="Time Posted">
                                                 <i class= "bx bx-calendar mr-1"></i> <?php echo $task['time-created'];?>

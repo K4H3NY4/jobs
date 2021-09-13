@@ -45,7 +45,11 @@ echo $db->error;
     
  
 
+<<<<<<< HEAD
 header("Location: backend/job-category.php");
+=======
+header("Location: http://localhost/housing-jobs/backend/job-category.php");
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 // Update the path below to your autoload.php,
 // see https://getcomposer.org/doc/01-basic-usage.md

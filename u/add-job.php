@@ -12,12 +12,21 @@ else if(isset($_SESSION["business-id"])){
     $business_id = $_SESSION['business-id'];
 }
 
+<<<<<<< HEAD
 */
     date_default_timezone_set('Africa/Nairobi');
 
 
 
 
+=======
+
+    date_default_timezone_set('Africa/Nairobi');
+
+
+
+*/
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 
 session_start();
@@ -141,11 +150,14 @@ else if(isset($_SESSION["email"])){
                                                             <label for="price">Budget</label>
                                                             <input id="price" name="price" type="text" class="form-control" required>
                                                         </div>
+<<<<<<< HEAD
 
                                                         <div class="form-group">
                                                             <label for="period">Period</label>
                                                             <input id="period" name="period" type="text" class="form-control" required>
                                                         </div>
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                         
 
                                                         <div class="form-group ">
@@ -158,7 +170,11 @@ else if(isset($_SESSION["email"])){
                                                     </div>
                                                 </div>
 
+<<<<<<< HEAD
                                                 <button type="submit" name="submit" class="btn btn-success mr-1 waves-effect waves-light">Save</button>
+=======
+                                                <button type="submit" name="submit" class="btn btn-primary mr-1 waves-effect waves-light">Save</button>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                 <button type="submit" class="btn btn-secondary waves-effect">Cancel</button>
 
 

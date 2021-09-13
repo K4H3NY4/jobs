@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
@@ -32,6 +33,8 @@ body{font-family: 'Roboto', sans-serif;
 
 </style>
          
+=======
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
          <!-- ========== Left Sidebar Start ========== -->
          <div class="vertical-menu">
 

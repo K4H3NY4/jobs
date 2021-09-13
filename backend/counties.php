@@ -18,7 +18,12 @@ if(isset($_POST['add-county'])){
     echo $db->error;
     }else{
     
+<<<<<<< HEAD
 header('Location: '.$_SERVER['PHP_SELF']);      
+=======
+       header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+    
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     }
 }
     
@@ -47,7 +52,12 @@ if(isset($_POST['delete'])){
     echo $db->error;
     }else{
     
+<<<<<<< HEAD
 header('Location: '.$_SERVER['PHP_SELF']);      
+=======
+       header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+    
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     }
 }
     
@@ -79,8 +89,13 @@ include('sidebar.php');
                                    
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
+<<<<<<< HEAD
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Counties</a></li>
                                             <li class="breadcrumb-item active">Listed Counties</li>
+=======
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Jobs</a></li>
+                                            <li class="breadcrumb-item active">Professionals Available</li>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </ol>
                                     </div>
 
@@ -94,7 +109,11 @@ include('sidebar.php');
                                         <form action="" method="post" class="form-inline mb-3 offset-1">
                                        
     <input type="text" placeholder="Add County" name="county"   class="form-control text-sm">
+<<<<<<< HEAD
     <button class="btn  btn-success ml-3" name="add-county">Submit</button>
+=======
+    <button class="btn  btn-primary ml-3" name="add-county">Submit</button>
+>>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         
                                         
                                         </form>
