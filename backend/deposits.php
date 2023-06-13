@@ -4,16 +4,11 @@ require('../config/db.php');
 
 date_default_timezone_set('Africa/Nairobi');
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 $queryProfs = "SELECT * FROM `deposit` ORDER by `id` DESC";
 $resultProfs = mysqli_query($db,$queryProfs);
 $profs =  mysqli_fetch_all($resultProfs, MYSQLI_ASSOC);
 mysqli_free_result($resultProfs);
 
-<<<<<<< HEAD
 if(isset($_POST['complete'])){   
 
     $update_id = mysqli_real_escape_string($db, $_POST['update_id']);
@@ -22,19 +17,12 @@ if(isset($_POST['complete'])){
     $transid = mysqli_real_escape_string($db, $_POST['trans-id']);
     $paymentmode = mysqli_real_escape_string($db, $_POST['payment-mode']);
 
-=======
-
-
-if(isset($_POST['complete'])){
-    $update_id = mysqli_real_escape_string($db, $_POST['update_id']);
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     $query = "UPDATE deposit SET  `cstatus` = 'Complete'  WHERE id = {$update_id} ";
 
     $db->query($query);
     if($db->error){
         echo $db->error;
     }else{
-<<<<<<< HEAD
             /**
              * send mail to customer
              **/
@@ -54,10 +42,6 @@ if(isset($_POST['complete'])){
  
 header('Location: '.$_SERVER['PHP_SELF']);  
 }
-=======
-        header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
-    }
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 }
 
    
@@ -87,13 +71,8 @@ include('sidebar.php');
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-<<<<<<< HEAD
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Finance</a></li>
                                             <li class="breadcrumb-item active">Deposits</li>
-=======
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Jobs</a></li>
-                                            <li class="breadcrumb-item active">Professionals Available</li>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </ol>
                                     </div>
 
@@ -122,7 +101,6 @@ include('sidebar.php');
                        <?php foreach ( $profs as $prof ):  ?>
                            <tr>
                            <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>"  >
-<<<<<<< HEAD
 
                            <?php
                             $query = "SELECT * FROM `customer` WHERE id =".$prof['customer-id'];
@@ -137,32 +115,21 @@ include('sidebar.php');
                            <input type="hidden" name="payment-mode" value="<?php echo $prof["payment-mode"]; ?>">
                            <input type="hidden" value="<?php echo($customers['email']);?>" name="customerEmail">
 
-=======
-                 
-                           <input type="hidden" name="update_id" value="<?php echo $prof["id"]; ?>">
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                <td class="text-capitalize"><?php echo $prof['trans-id']; ?></td>
                                <td><?php echo $prof['amount']; ?></td>
                                <td class="text-capitalize"><?php echo $prof['payment-mode']; ?></td>
                                <td><?php echo $prof['cstatus']; ?></td>
                                <td><?php echo $prof['date_created']; ?></td>
                                <td><?php if( $prof['cstatus'] == 'Pending Verification'){
-<<<<<<< HEAD
                                    echo ('<button class="btn btn-sm btn-success" name="complete">Complete</button>');
-=======
-                                   echo ('<button class="btn btn-sm btn-primary" name="complete">Complete</button>');
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                }   else if($prof['cstatus'] == 'Complete'){
                                    echo('<button class="btn btn-sm btn-success disabled">Verifed</button>');
 
                                }    ?>                      
                                
                                 </td>
-<<<<<<< HEAD
                                 
                                 
-=======
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                            </form>
                            </tr>
                           

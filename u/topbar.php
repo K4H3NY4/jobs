@@ -4,19 +4,11 @@
     <head>
         
         <meta charset="utf-8" />
-<<<<<<< HEAD
         <title>Professsional</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
      
         <!-- App favicon -->
         <link rel="shortcut icon" href="../assets/ images/favicon.ico">
-=======
-        <title>Profesionals</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="../assets/images/favicon.ico">
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
         <!-- DataTables -->
         <link href="../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
@@ -41,7 +33,6 @@
         <script src="https://use.fontawesome.com/fd4afa8363.js"></script>
         
         <link  rel="stylesheet"  href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" />
-<<<<<<< HEAD
     
             
 
@@ -61,10 +52,6 @@ font-family: 'Roboto' !important;
 
 </style>
     
-=======
-            
-
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     </head>
 
     <body data-sidebar="dark">
@@ -103,49 +90,10 @@ font-family: 'Roboto' !important;
                         <!-- App Search-->
                        
 
-<<<<<<< HEAD
                         <div class="d-none d-lg-block ml-2 pt-4">
                        
                            
                               
-=======
-                        <div class="dropdown dropdown-mega d-none d-lg-block ml-2">
-                        <a href="https://housing.pacisvorgel.co.ke/home-with-caption-form/" type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                HOME
-                                <i class="mdi mdi-chevron-down"></i> 
-                            </a>
-                           
-                            <a  href="https://housing.pacisvorgel.co.ke/about/" type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                ABOUT US
-                                <i class="mdi mdi-chevron-down"></i> 
-                            </a>
-
-                            <a href="https://housing.pacisvorgel.co.ke/properties-for-sale/" type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                BUY
-                                <i class="mdi mdi-chevron-down"></i> 
-                            </a>
-
-                            <a href="https://housing.pacisvorgel.co.ke/properties-for-rent/" type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                RENT
-                                <i class="mdi mdi-chevron-down"></i> 
-                            </a>
-
-                            <a href="https://housing.pacisvorgel.co.ke/agency/" type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                AGENCIES
-                                <i class="mdi mdi-chevron-down"></i> 
-                            </a>
-
-                            <a href="https://housing.pacisvorgel.co.ke/agent/" type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                AGENTS
-                                <i class="mdi mdi-chevron-down"></i> 
-                            </a>
-
-                            <a href="https://housing.pacisvorgel.co.ke/housing-jobs/" type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                JOBS
-                                <i class="mdi mdi-chevron-down"></i> 
-                            </a>
-                                
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                         </div>
                     </div>
 
@@ -153,56 +101,6 @@ font-family: 'Roboto' !important;
 
                   
 
-<<<<<<< HEAD
-=======
-                        <div class="dropdown d-inline-block">
-                            <button type="button" class="btn header-item waves-effect"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="" src="../assets/images/flags/us.jpg" alt="Header Language" height="16">
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                    
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="../assets/images/flags/spain.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">Spanish</span>
-                                </a>
-
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="../assets/images/flags/germany.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">German</span>
-                                </a>
-
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="../assets/images/flags/italy.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">Italian</span>
-                                </a>
-
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <img src="../assets/images/flags/russia.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">Russian</span>
-                                </a>
-                            </div>
-                        </div>
-
-                       
-
-                        <div class="dropdown d-none d-lg-inline-block ml-1">
-                            <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
-                                <i class="bx bx-fullscreen"></i>
-                            </button>
-                        </div>
-
-                       
-
-                   
-
-                        <div class="dropdown d-inline-block">
-                            <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-                                <i class="bx bx-cog bx-spin"></i>
-                            </button>
-                        </div>
-            
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                     </div>
                 </div>
             </header>

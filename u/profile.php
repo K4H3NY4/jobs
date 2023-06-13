@@ -4,11 +4,7 @@ require('balance.php');
 
 
 
-<<<<<<< HEAD
 date_default_timezone_set('Africa/Nairobi');
-=======
-    date_default_timezone_set('Africa/Nairobi');
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 
 
@@ -34,17 +30,12 @@ mysqli_free_result($resultTasks);
 
 
 
-<<<<<<< HEAD
 $queryPending =" SELECT COUNT(`customer-id`) FROM `tasks` WHERE `customer-id` ='$id' AND `cstatus`='Taken' or  `cstatus`='Closed' AND `funds-status`='Pending'";
-=======
-$queryPending =" SELECT COUNT(`customer-id`) FROM `tasks` WHERE  `cstatus`='Taken' or  `cstatus`='Closed' AND `funds-status`='Pending'   AND `customer-id` ='$id'";
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 $resultPending =  mysqli_query($db,$queryPending);
 $pending = mysqli_fetch_assoc($resultPending);
 mysqli_free_result($resultPending);
 
 
-<<<<<<< HEAD
 if(isset($_POST['changePassword'])){
 
 
@@ -72,8 +63,6 @@ if($db->error){
 
 
 
-=======
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 include('topbar.php');
 include('sidebar.php');
     
@@ -114,19 +103,11 @@ include('sidebar.php');
                         <div class="row">
                             <div class="col-xl-4">
                                 <div class="card overflow-hidden">
-<<<<<<< HEAD
                                     <div class="bg-soft-success">
                                         <div class="row">
                                             <div class="col-7">
                                                 <div class="text-success p-3">
                                                     <h5 class="text-success">Welcome Back !</h5>
-=======
-                                    <div class="bg-soft-primary">
-                                        <div class="row">
-                                            <div class="col-7">
-                                                <div class="text-primary p-3">
-                                                    <h5 class="text-primary">Welcome Back !</h5>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     <p>It will seem like simplified</p>
                                                 </div>
                                             </div>
@@ -145,11 +126,7 @@ include('sidebar.php');
 ">
                                                 </div>
                                                 <h5 class="font-size-15 text-truncate text-capitalize"><?php echo $customers ["first-name"]; echo ' '; echo $customers['last-name']; ?></h5>
-<<<<<<< HEAD
                                                 <p id="editProfile" class="btn btn-success waves-effect waves-light btn-sm">Edit Profile <i class="mdi mdi-arrow-right ml-1"></i></p>                                                
-=======
-                                                <p id="editProfile" class="btn btn-primary waves-effect waves-light btn-sm">Edit Profile <i class="mdi mdi-arrow-right ml-1"></i></p>                                                
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </div>
 
                                             <div class="col-sm-8">
@@ -212,11 +189,7 @@ include('sidebar.php');
                                                         <td><input type="password" name="confirmPassword"></td>
                                                     </tr>
                                                     <tr>
-<<<<<<< HEAD
                                                     <th> <input class="btn btn-sm btn-success" type="submit" name="changePassword" value="Update"></th>
-=======
-                                                    <th> <input class="btn btn-sm btn-primary" type="submit" name="changePassword" value="Update"></th>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     
                                                     </tr>
                                                   
@@ -234,11 +207,7 @@ include('sidebar.php');
                                                      <input class="form-control" type="file" name="uploadfiled" id="uploaded" >
                                                      <input type="hidden" name="update_id" value="<?php echo $customers["id"]; ?>">
 
-<<<<<<< HEAD
                                                      <input class="btn btn-sm btn-success" type="submit" name="submit-photo">
-=======
-                                                     <input class="btn btn-sm btn-primary" type="submit" name="submit-photo">
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     </form>
                                                     
                                                 
@@ -266,11 +235,7 @@ include('sidebar.php');
                                                         <h4 class="mb-0"><?php echo $count['COUNT(`customer-id`)'];?></h4>
                                                     </div>
         
-<<<<<<< HEAD
                                                     <div class="mini-stat-icon avatar-sm align-self-center rounded-circle bg-success">
-=======
-                                                    <div class="mini-stat-icon avatar-sm align-self-center rounded-circle bg-primary">
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                         <span class="avatar-title">
                                                             <i class="bx bx-check-circle font-size-24"></i>
                                                         </span>
@@ -288,11 +253,7 @@ include('sidebar.php');
                                                         <h4 class="mb-0"><?php echo $pending['COUNT(`customer-id`)'];?></h4>
                                                     </div>
         
-<<<<<<< HEAD
                                                     <div class="avatar-sm align-self-center mini-stat-icon rounded-circle bg-success">
-=======
-                                                    <div class="avatar-sm align-self-center mini-stat-icon rounded-circle bg-primary">
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                         <span class="avatar-title">
                                                             <i class="bx bx-hourglass font-size-24"></i>
                                                         </span>
@@ -310,11 +271,7 @@ include('sidebar.php');
                                                         <h4 class="mb-0"><?php  echo (" Ksh  $available_balance" ) ; ?></h4>
                                                     </div>
         
-<<<<<<< HEAD
                                                     <div class="avatar-sm align-self-center mini-stat-icon rounded-circle bg-success">
-=======
-                                                    <div class="avatar-sm align-self-center mini-stat-icon rounded-circle bg-primary">
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                         <span class="avatar-title">
                                                             <i class="bx bx-package font-size-24"></i>
                                                         </span>

@@ -54,7 +54,6 @@ if($db->error){
 
     
  }else{
-<<<<<<< HEAD
      /***
          * 
          * your deposit of ksh xxx is being processed. we'll contact you shortly.
@@ -76,20 +75,13 @@ if($db->error){
         mail($to,$subject,$message,$headers);
         
     header("Location: wallet.php");
-=======
-    header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     
  }
  
  
  };
 
-<<<<<<< HEAD
  //mysqli_close($db);
-=======
- mysqli_close($db);
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
  
 ?>
 
@@ -137,11 +129,7 @@ include('sidebar.php');
                                         
                                         <div class="media">
                                             <div class="mr-4">
-<<<<<<< HEAD
                                                 <i class="mdi mdi-account-circle text-success h1"></i>
-=======
-                                                <i class="mdi mdi-account-circle text-primary h1"></i>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </div>
 
                                             <div class="media-body">
@@ -186,11 +174,7 @@ include('sidebar.php');
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="formrow-email-input">Amount</label>
-<<<<<<< HEAD
                                                         <input type="number" class="form-control"  name ="amount" min="10" id="formrow-email-input" required>
-=======
-                                                        <input type="number" class="form-control"  name ="amount" id="formrow-email-input" required>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -222,11 +206,7 @@ include('sidebar.php');
 
                                            
                                             <div class="pl-3">
-<<<<<<< HEAD
                                                 <button type="submit" class="btn btn-success w-md pl-1" name="top-up" >Submit</button>
-=======
-                                                <button type="submit" class="btn btn-primary w-md pl-1" name="top-up" >Submit</button>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </div>
                                         </form>
                                         <?php

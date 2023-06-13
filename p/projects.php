@@ -18,11 +18,7 @@ else if(isset($_SESSION["profid"])){
 $id = $_SESSION['profid'];
  
 
-<<<<<<< HEAD
 $queryTasks = "SELECT * FROM `tasks` WHERE  `prof-id` = $id   ORDER by `time-created` DESC";
-=======
-$queryTasks = "SELECT * FROM `tasks` WHERE `cstatus`='Taken' or `cstatus`='Closed' AND `prof-id` = '$id'  ORDER by `time-created` DESC";
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 $resultTasks = mysqli_query($db,$queryTasks);
 $tasks =  mysqli_fetch_all($resultTasks, MYSQLI_ASSOC);
 mysqli_free_result($resultTasks);
@@ -91,11 +87,7 @@ include('sidebar.php');
                                     <div class="px-4 py-3 border-top">
                                         <ul class="list-inline mb-0">
                                             <li class="list-inline-item mr-3">
-<<<<<<< HEAD
                                                 <span class="badge badge-success text-uppercase"><?php echo $task['category'];?></span>
-=======
-                                                <span class="badge badge-primary text-uppercase"><?php echo $task['category'];?></span>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </li>
                                      
                                             <li class="list-inline-item mr-3" data-toggle="tooltip" data-placement="top" title="" data-original-title="Budget">

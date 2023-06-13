@@ -43,11 +43,7 @@ include('sidebar.php');
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-flex align-items-center justify-content-between">
-<<<<<<< HEAD
                                     <h4 class="mb-0 font-size-18">Professionals Available <span class="ml-5 btn btn-sm btn-outline-success" id="filter">FILTER</span></h4>
-=======
-                                    <h4 class="mb-0 font-size-18">Professionals Available <span class="ml-5 btn btn-sm btn-outline-primary" id="filter">FILTER</span></h4>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
@@ -88,11 +84,7 @@ include('sidebar.php');
                                <td class="text-capitalize"><?php echo $prof['last-name']; ?></td>
                                <td class="text-capitalize"><?php echo $prof['occupation']; ?></td>
                                <td class="text-capitalize"><?php echo $prof['county']; ?></td>
-<<<<<<< HEAD
                                <td><a class="btn btn-sm btn-success" href="prof-profile.php?id=<?php echo  base64_encode($prof['id']); ?>">View Profile</a></td>
-=======
-                               <td><a class="btn btn-sm btn-primary" href="prof-profile.php?id=<?php echo  base64_encode($prof['id']); ?>">View Profile</a></td>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                            </tr>
                           
                            <?php endforeach   ?>
@@ -112,11 +104,7 @@ include('sidebar.php');
                                 <div class="card text-center">
                                     <div class="card-body">
                                         <div class="avatar-sm mx-auto mb-4">
-<<<<<<< HEAD
                                             <span class="avatar-title rounded-circle bg-soft-success text-success font-size-16">
-=======
-                                            <span class="avatar-title rounded-circle bg-soft-primary text-primary font-size-16">
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                                 Pro
                                             </span>
                                         </div>
@@ -124,11 +112,7 @@ include('sidebar.php');
                                         <p class="text-muted text-capitalize"><?php echo $prof['occupation']; ?></p>
 
                                         <div>
-<<<<<<< HEAD
                                         <a href="prof-profile.php?id=<?php echo  base64_encode($prof['id']); ?>" class="badge badge-success font-size-11 m-1"><?php echo $prof['county']; ?></a>
-=======
-                                        <a href="prof-profile.php?id=<?php echo  base64_encode($prof['id']); ?>" class="badge badge-primary font-size-11 m-1"><?php echo $prof['county']; ?></a>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                           
                                         </div>
                                     </div>

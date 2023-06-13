@@ -74,11 +74,7 @@ include('sidebar.php');
                                <td><?php echo $prof['occupation']; ?></td>
                                <td><?php echo $prof['county']; ?></td>
                                <td><?php echo $prof['phone']; ?></td>
-<<<<<<< HEAD
                                <td > <a href="prof-profile.php?id=<?php echo base64_encode($prof['id']); ?>"  class="btn btn-sm btn-success"> View Profile</a></td>
-=======
-                               <td > <a href="prof-profile.php?id=<?php echo base64_encode($prof['id']); ?>"  class="btn btn-sm btn-primary"> View Profile</a></td>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                            </tr>
                           
                            <?php endforeach   ?>

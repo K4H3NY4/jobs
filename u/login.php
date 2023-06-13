@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-
-
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 <!doctype html>
 <html lang="en">
 
@@ -27,16 +22,11 @@
     <body>
 
         <div class="home-btn d-none d-sm-block">
-<<<<<<< HEAD
             <a href="indexphp" class="text-dark"><i class="fas fa-home h2"></i></a>
-=======
-            <a href="index.html" class="text-dark"><i class="fas fa-home h2"></i></a>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
         </div>
         <div class="account-pages my-5 pt-sm-5">
             <div class="container">
                 <div class="row justify-content-center">
-<<<<<<< HEAD
                 
                     <div class="col-md-8 col-lg-6 col-xl-5">
                     <div class="" align="center" >
@@ -56,16 +46,6 @@
                                         <div class="text-success p-4">
                                             <h5 class="text-success">Welcome User !</h5>
                                             <p>Sign in to continue to Cetonvale as user.</p>
-=======
-                    <div class="col-md-8 col-lg-6 col-xl-5">
-                        <div class="card overflow-hidden">
-                            <div class="bg-soft-primary">
-                                <div class="row">
-                                    <div class="col-7">
-                                        <div class="text-primary p-4">
-                                            <h5 class="text-primary">Welcome Back !</h5>
-                                            <p>Sign in to continue to Cetonvale.</p>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </div>
                                     </div>
                                     <div class="col-5 align-self-end">
@@ -75,31 +55,18 @@
                             </div>
                             <div class="card-body pt-0"> 
                                 <div>
-<<<<<<< HEAD
                                     <a href="indexphp">
                                         <div class="d-none avatar-md profile-user-wid mb-4">
                                             <span class="avatar-title  bg-light">
                                                 <img src="../assets/images/logo.png" alt="" class="rounded-circle" height="34">
-=======
-                                    <a href="index.html">
-                                        <div class="avatar-md profile-user-wid mb-4">
-                                            <span class="avatar-title rounded-circle bg-light">
-                                                <img src="../assets/images/logo.svg" alt="" class="rounded-circle" height="34">
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </span>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="p-2">
-<<<<<<< HEAD
       <?php
 	require('../config/db.php');
 
-=======
-                                <?php
-	require('../config/db.php');
-    session_start();
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     
 if(isset($_SESSION["id"])){
 header("Location: profile.php");
@@ -134,7 +101,6 @@ header("Location: profile.php");
             
 			
             }else{
-<<<<<<< HEAD
                 
                 
                 echo('
@@ -180,24 +146,14 @@ header("Location: profile.php");
                 ');
                 
 				echo "";
-=======
-				echo "<div class='form'><h3>email/password is incorrect.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 				}
     }else{
 ?>
                                     <form class="form-horizontal"  method="POST" >
-<<<<<<< HEAD
 
                                         <div class="form-group">
                                             <label for="Phone Number">Email</label>
                                             <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-=======
-        
-                                        <div class="form-group">
-                                            <label for="Phone Number">E-mail</label>
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </div>
                 
                                         <div class="form-group">
@@ -211,7 +167,6 @@ header("Location: profile.php");
                                         </div>
                                         
                                         <div class="mt-3">
-<<<<<<< HEAD
                                             <button class="btn btn-success btn-block waves-effect waves-light"  name="submit" type="submit">Log In</button>
                                             <div class="row col-12 mt-3" align="center">
                                             <span class="col-5 m-0 p-0"><hr></span><span class="col-2 mt-2">OR</span> <span class="col-5 m-0 p-0"><hr></span>
@@ -229,19 +184,6 @@ header("Location: profile.php");
                                         </div>
                                     </form>
                                 <!---->
-=======
-                                            <button class="btn btn-primary btn-block waves-effect waves-light"  name="submit" type="submit">Log In</button>
-                                        </div>
-            
-                                                                                            <div class="mt-4 text-center">
-                                            <a href="auth-recoverpw.html" class="text-muted"><i class="mdi mdi-lock mr-1"></i> Forgot your password?</a>
-                                        </div>
-                                    </form>
-
-                                    <!---->
-
-<br>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 
 <?php } ?>
@@ -254,13 +196,8 @@ header("Location: profile.php");
                         <div class="mt-5 text-center">
                             
                             <div>
-<<<<<<< HEAD
                                
                                 <p>© <script>document.write(new Date().getFullYear())</script> . Crafted with <i class="mdi mdi-heart text-danger"></i> by Creative Haven</p>
-=======
-                                <p>Don't have an account ? <a href="register.php" class="font-weight-medium text-primary"> Signup now </a> </p>
-                                <p>© 2020 . Crafted with <i class="mdi mdi-heart text-danger"></i> by Cetonvale</p>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                             </div>
                         </div>
 
@@ -280,7 +217,4 @@ header("Location: profile.php");
         <script src="../assets/js/app.js"></script>
     </body>
 </html>
-<<<<<<< HEAD
 <?php include('topbaru.php');?>
-=======
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c

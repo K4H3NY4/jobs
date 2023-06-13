@@ -32,12 +32,7 @@ if(isset($_POST['delete'])){
     echo $db->error;
     }else{
     
-<<<<<<< HEAD
 header('Location: '.$_SERVER['PHP_SELF']);      
-=======
-       header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
-    
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     }
 }
     
@@ -74,11 +69,7 @@ include('sidebar.php');
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
                                             <li class="breadcrumb-item"><a href="javascript: void(0);">Jobs</a></li>
-<<<<<<< HEAD
                                             <li class="breadcrumb-item active">Categories</li>
-=======
-                                            <li class="breadcrumb-item active">Professionals Available</li>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </ol>
                                     </div>
 
@@ -93,11 +84,7 @@ include('sidebar.php');
                                        
     Enter Category <input type="text" placeholder="Plumber" name="category"   class="form-control text-sm ml-3 mr-3">
     Enter Image: <input type="file" class="form-control ml-3 " name="catimage">
-<<<<<<< HEAD
     <button class="btn  btn-success ml-3" name="submit">Submit</button>
-=======
-    <button class="btn  btn-primary ml-3" name="submit">Submit</button>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         
                                         
                                         </form>
@@ -107,11 +94,7 @@ include('sidebar.php');
                            <tr>
                              
                               
-<<<<<<< HEAD
                                <th>Job Category</th>
-=======
-                               <th>Occupation</th>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                <th>Action</th>
                            </tr>
                        </thead>

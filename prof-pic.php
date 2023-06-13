@@ -49,7 +49,6 @@ if(isset($_POST['submit-profpic'])){
     echo $db->error;
     }else{
     ($sql);
-<<<<<<< HEAD
         header("Location: p/profile.php");
     
     // Update the path below to your autoload.php,
@@ -119,9 +118,6 @@ if(isset($_POST['submit-bgpic'])){
     }else{
     ($sql);
         header("Location: p/profile.php");
-=======
-        header("Location: http://localhost/housing-jobs/p/profile.php");
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     
     // Update the path below to your autoload.php,
     // see https://getcomposer.org/doc/01-basic-usage.md

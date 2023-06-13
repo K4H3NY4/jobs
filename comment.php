@@ -58,11 +58,7 @@ if(isset($_POST['commentAdd'])){
 
                                         <form action="" method="post" class="row mb-3">
                                         <input type="text" placeholder="Add Comment" name="comment" class="form-control w-75 ml-3"> 
-<<<<<<< HEAD
                                         <button class="btn btn-sm btn-success ml-3" type="submit" name="commentAdd">Comment</button>
-=======
-                                        <button class="btn btn-sm btn-primary ml-3" type="submit" name="commentAdd">Comment</button>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                         </form>
 
                                         <?php foreach ( $comments as $comment) :?>
@@ -110,11 +106,7 @@ if(isset($_POST['commentAdd'])){
                                                 </p>
                                             </div>
                                             <div class="ml-3">
-<<<<<<< HEAD
                                                 <span class="text-success small">   <?php echo $comment["date-created"] ; ?></span>
-=======
-                                                <span class="text-primary small">   <?php echo $comment["date-created"] ; ?></span>
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
                                             </div>
                                         </div>
 

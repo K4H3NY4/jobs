@@ -20,10 +20,7 @@ $county = mysqli_real_escape_string($db, $_POST['county']);
 $town = mysqli_real_escape_string($db, $_POST['town']);
 $description = mysqli_real_escape_string($db, $_POST['description']);
 $price = mysqli_real_escape_string($db, $_POST['price']);
-<<<<<<< HEAD
 $period = mysqli_real_escape_string($db, $_POST['period']);
-=======
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 $cover_photo = $_FILES['uploadfile']['name'];
 $covertmpname = $_FILES['uploadfile']['tmp_name'];
@@ -55,10 +52,7 @@ $sql = "INSERT INTO `tasks` SET
 `town`='$town' ,
 `description`='$description' ,
 `price`='$price' ,
-<<<<<<< HEAD
 `period`='$period' ,
-=======
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 `photo`='$folder' ,
 `customer-id`='$id',
 `funds-status`='Pending',
@@ -69,7 +63,6 @@ $db->query($sql);
 if($db->error){
 echo $db->error;
 }else{
-<<<<<<< HEAD
 
     
 $queryProfs = "SELECT * FROM `prof` where `county`= '$county' AND `occupation` ='$occupation'  ORDER by `id` DESC";
@@ -96,10 +89,6 @@ foreach ( $profs as $prof) :
 endforeach;
 
 header("Location: u/projects.php");
-=======
-($sql);
-    header("Location: http://localhost/housing-jobs/u/projects.php");
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 
 // Update the path below to your autoload.php,
 // see https://getcomposer.org/doc/01-basic-usage.md
@@ -170,11 +159,7 @@ if(isset($_POST['submit-photo'])){
     echo $db->error;
     }else{
     ($sql);
-<<<<<<< HEAD
         header("Location: u/profile.php");
-=======
-        header("Location: http://localhost/housing-jobs/u/profile.php");
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
     
     // Update the path below to your autoload.php,
     // see https://getcomposer.org/doc/01-basic-usage.md
@@ -201,8 +186,5 @@ if(isset($_POST['submit-photo'])){
     
     };
 
-<<<<<<< HEAD
     mysqli_close($db);
-=======
->>>>>>> b888daa3ab3d6c7880f7e4f17cc79861e3914f2c
 ?>
